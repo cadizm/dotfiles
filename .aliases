@@ -1,0 +1,20 @@
+#!/bin/bash
+
+alias ls='ls -F'
+alias sl=ls
+alias Ls=ls
+
+alias less='less -X'
+alias Less=less
+
+alias srot=sort
+alias Sort=sort
+
+alias amke=make
+alias mkae=make
+alias clena=clean
+
+alias dirs='dirs -l -p -v'
+alias h='history | sort -r'
+
+alias cdws='cd ~/ws/`date +%Y%m%d`'

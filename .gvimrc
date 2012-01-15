@@ -1,0 +1,9 @@
+set lines=63
+set columns=80
+set guioptions-=T
+set guifont=Bitstream\ Vera\ Sans\ Mono:h12
+"set guifont=Monospace\ 8
+"set gcr=a:blinkon0
+syntax on
+colorscheme mc
+"winpos 1300 1

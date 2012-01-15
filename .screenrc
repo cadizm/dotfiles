@@ -1,0 +1,13 @@
+
+startup_message off
+
+# rebind escape key to C-v
+escape ^Vv
+
+# add scroll support
+termcapinfo xterm* ti@:te@
+
+# set up xterm title bar
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+defhstatus "screen ^E (^Et) :: $USER@^EH"
+hardstatus off
