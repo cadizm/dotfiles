@@ -23,18 +23,68 @@ set wildmode=list:longest,full
 map <C-Tab> :tabn<CR>
 map <C-Tab> :tabp<CR>
 
-" emacs-ish movement
-imap <C-a> <Esc>0i
-imap <C-e> <Esc>$a
-imap <C-b> <Esc>ha
-imap <C-f> <Esc>la
-imap <M-b> <Esc>bi
-imap <M-f> <Esc>wwi
-
-" these need more tweaking
 map <M-d> "_dw
-imap <M-d> <Esc>lcw
-imap <C-k> <Esc>lDa
-imap <M-BS> <Esc>bdwa
+
+" emacs-ish movement taken from vimacs
+" See http://www.algorithm.com.au/code/vimacs
+
+cmap <C-a> <Home>
+imap <C-a> <Home>
+vmap <C-a> <Home>
+omap <C-a> <Home>
+
+cmap <C-e> <End>
+imap <C-e> <End>
+vmap <C-e> <End>
+omap <C-e> <End>
+
+cmap <C-b> <Left>
+imap <C-b> <Left>
+vmap <C-b> <Left>
+omap <C-b> <Left>
+
+cmap <C-f> <Right>
+imap <C-f> <Right>
+vmap <C-f> <Right>
+omap <C-f> <Right>
+
+cnoremap <M-b> <S-Left>
+inoremap <M-b> <C-Left>
+vnoremap <M-b> <C-Left>
+onoremap <M-b> <C-Left>
+
+cnoremap <M-f> <S-Right>
+inoremap <M-f> <C-o>e<Right>
+vnoremap <M-f> e<Right>
+onoremap <M-f> e<Right>
+
+cnoremap <C-d> <Del>
+inoremap <C-d> <Del>
+vnoremap <C-d> <Del>
+onoremap <C-d> <Del>
+
+cnoremap <M-BS> <C-w>
+inoremap <M-BS> <C-w>
+
+inoremap <silent> <M-d> <C-r>=<SID>KillWord()<CR>
+inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
+
+function! <SID>KillWord()
+  if col('.') > strlen(getline('.'))
+    return "\<Del>\<C-o>dw"
+  else
+    return "\<C-o>dw"
+  endif
+endfunction
+
+function! <SID>KillLine()
+  if col('.') > strlen(getline('.'))
+    " At EOL; join with next line
+    return "\<Del>"
+  else
+    " Not at EOL; kill until end of line
+    return "\<C-o>d$"
+  endif
+endfunction
 
 autocmd FileType lisp setlocal tabstop=2 shiftwidth=2
