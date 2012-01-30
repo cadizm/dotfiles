@@ -1,4 +1,3 @@
-
 set nocompatible
 set linebreak
 set hlsearch
@@ -30,37 +29,30 @@ map <M-d> "_dw
 
 cmap <C-a> <Home>
 imap <C-a> <Home>
-vmap <C-a> <Home>
 omap <C-a> <Home>
 
 cmap <C-e> <End>
 imap <C-e> <End>
-vmap <C-e> <End>
 omap <C-e> <End>
 
 cmap <C-b> <Left>
 imap <C-b> <Left>
-vmap <C-b> <Left>
 omap <C-b> <Left>
 
 cmap <C-f> <Right>
 imap <C-f> <Right>
-vmap <C-f> <Right>
 omap <C-f> <Right>
 
 cnoremap <M-b> <S-Left>
 inoremap <M-b> <C-Left>
-vnoremap <M-b> <C-Left>
 onoremap <M-b> <C-Left>
 
 cnoremap <M-f> <S-Right>
 inoremap <M-f> <C-o>e<Right>
-vnoremap <M-f> e<Right>
 onoremap <M-f> e<Right>
 
 cnoremap <C-d> <Del>
 inoremap <C-d> <Del>
-vnoremap <C-d> <Del>
 onoremap <C-d> <Del>
 
 cnoremap <M-BS> <C-w>
