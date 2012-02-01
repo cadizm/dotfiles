@@ -1,1 +1,17 @@
-XTerm*VT100.metaSendsEscape: True
+*background: #111111
+*foreground: #f5deb3
+*metaSendsEscape: true
+
+! xterm ----------------------------------------------------------------------
+
+xterm*geometry:           120x37+5-45
+xterm*dynamicColors:      true
+xterm*eightBitInput:      true
+xterm*saveLines:          1024
+xterm*scrollTtyKeypress:  true
+xterm*scrollTtyOutput:    false
+xterm*scrollBar:          true
+xterm*rightScrollBar:     true
+xterm*jumpScroll:         true
+xterm*multiScroll:        true
+xterm*toolBar:            false
