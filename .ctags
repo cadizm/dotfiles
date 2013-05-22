@@ -1,0 +1,9 @@
+--langdef=XML
+--langmap=XML:.xml
+--regex-XML=/id="([a-zA-Z0-9_]+)"/\1/d,definition/
+
+--langdef=JSON
+--langmap=JSON:.json
+
+--langdef=GPJ
+--langmap=GPJ:.gpj
