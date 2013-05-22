@@ -1,0 +1,27 @@
+[user]
+  name = Michael Cadiz
+	email = michael.cadiz@gmail.com
+[core]
+#	autocrlf = input
+	autocrlf = false
+[alias]
+	st = status -s
+	ci = commit
+	br = branch
+	co = checkout
+	df = difftool --no-prompt
+	wc = whatchanged
+	unstage = reset HEAD
+	ls-untracked = ls-files --other --exclude-standard
+[color]
+	ui = true
+[diff]
+	tool = tkdiff
+[merge]
+	tool = tkdiff
+[mergetool "tkdiff"]
+	path = $HOME/bin/tkdiff
+	keepBackup = false
+	trustExitCode = false
+[commit]
+	template = $HOME/.gitmessage.txt
