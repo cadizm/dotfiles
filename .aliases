@@ -1,20 +1,26 @@
-#!/bin/bash
 
+alias vi='vim'
+#alias tar=gtar
+alias diff='diff -u'
 alias ls='ls -F'
 alias sl=ls
 alias Ls=ls
-
-alias less='less -X'
-alias Less=less
-
-alias srot=sort
-alias Sort=sort
-
-alias amke=make
-alias mkae=make
-alias clena=clean
-
-alias dirs='dirs -l -p -v'
+alias dir=ls
+alias gitk='gitk --all'
 alias h='history | sort -r'
+alias less='less -X'
+alias Less='less'
+alias dirs='dirs -l -p -v'
+# grep: ignore binary files, use extended-regexp, exclude cscope/ctags
+alias grep='egrep -Ea --exclude={cscope.out,tags}'
+alias xml_pp='xml_pp -v -l -s indented'
+alias amke='make'
+alias clena=clean
+alias srot='sort'
+alias Sort='sort'
+alias cdws='cd $HOME/ws/`date +%Y%m%d`'
+alias cdwy='cd "$HOME/ws/"`if [ ! -d "$WS" ]; then mkws && ls $WS/../ | tail -n 2 | head -n 1 ; else ls $WS/../ | tail -n 2 | head -n 1; fi`'
 
-alias cdws='cd ~/ws/`date +%Y%m%d`'
+
+
+
