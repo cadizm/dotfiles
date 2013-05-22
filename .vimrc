@@ -1,5 +1,5 @@
+
 set nocompatible
-set linebreak
 set hlsearch
 set incsearch
 set tabstop=4
@@ -21,6 +21,7 @@ set wildmode=list:longest,full
 
 map <C-Tab> :tabn<CR>
 map <C-Tab> :tabp<CR>
+map <C-\> :Lid<CR>
 
 map <M-d> "_dw
 
@@ -78,5 +79,3 @@ function! <SID>KillLine()
     return "\<C-o>d$"
   endif
 endfunction
-
-autocmd FileType lisp setlocal tabstop=2 shiftwidth=2
