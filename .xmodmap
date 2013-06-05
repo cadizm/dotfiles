@@ -10,3 +10,11 @@ remove Lock = Caps_Lock
 keysym Caps_Lock = Control_L
 !add Lock = Caps_Lock
 add Control = Control_L
+
+! Option sends meta in OS X
+!clear Mod1
+!clear Mod2
+!keycode 63 = Mode_switch
+!keycode 66 = Meta_L
+!add Mod1 = Meta_L
+!add Mod2 = Mode_switch
