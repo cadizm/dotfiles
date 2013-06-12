@@ -2,6 +2,10 @@
 --langmap=XML:.xml
 --regex-XML=/id="([a-zA-Z0-9_]+)"/\1/d,definition/
 
+--langdef=properties
+--langmap=properties:.properties
+--regex-properties=/[a-zA-Z0-9_]+[ ]*=[ ]*"([a-zA-Z0-9_]+)"/\1/d,definition/
+
 --langdef=JSON
 --langmap=JSON:.json
 

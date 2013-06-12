@@ -21,6 +21,4 @@ alias Sort='sort'
 alias cdws='cd $HOME/ws/`date +%Y%m%d`'
 alias cdwy='cd "$HOME/ws/"`if [ ! -d "$WS" ]; then mkws && ls $WS/../ | tail -n 2 | head -n 1 ; else ls $WS/../ | tail -n 2 | head -n 1; fi`'
 
-
-
-
+alias ssh='ssh -A'

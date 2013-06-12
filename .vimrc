@@ -79,3 +79,5 @@ function! <SID>KillLine()
     return "\<C-o>d$"
   endif
 endfunction
+
+autocmd FileType xml setlocal shiftwidth=2 tabstop=2

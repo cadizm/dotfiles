@@ -1,3 +1,4 @@
+
 !
 ! Make caps lock control. Uncomment the commented out lines below to swap
 ! caps lock and control.
@@ -18,3 +19,10 @@ add Control = Control_L
 !keycode 66 = Meta_L
 !add Mod1 = Meta_L
 !add Mod2 = Mode_switch
+
+clear Mod1
+clear Mod2
+keycode 63 = Mode_switch
+keycode 66 = Meta_L
+add Mod1 = Meta_L
+add Mod2 = Mode_switch
