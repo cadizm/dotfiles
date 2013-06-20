@@ -1,4 +1,3 @@
-
 alias vi='vim'
 #alias tar=gtar
 alias diff='diff -u'
@@ -18,6 +17,7 @@ alias amke='make'
 alias clena=clean
 alias srot='sort'
 alias Sort='sort'
+alias snv='svn'
 alias cdws='cd $HOME/ws/`date +%Y%m%d`'
 alias cdwy='cd "$HOME/ws/"`if [ ! -d "$WS" ]; then mkws && ls $WS/../ | tail -n 2 | head -n 1 ; else ls $WS/../ | tail -n 2 | head -n 1; fi`'
 
