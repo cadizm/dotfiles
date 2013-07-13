@@ -1,9 +1,9 @@
 [user]
   name = Michael Cadiz
 	email = michael.cadiz@gmail.com
-[core]
+#[core]
 #	autocrlf = input
-	autocrlf = false
+#	autocrlf = false
 [alias]
 	st = status -s
 	ci = commit

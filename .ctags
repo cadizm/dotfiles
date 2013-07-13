@@ -11,3 +11,6 @@
 
 --langdef=GPJ
 --langmap=GPJ:.gpj
+
+--langdef=CONF
+--langmap=CONF:.conf
