@@ -1,4 +1,3 @@
-
 set nocompatible
 set hlsearch
 set incsearch
@@ -14,6 +13,8 @@ set hidden
 set showcmd
 set history=1000
 set winaltkeys=no
+set cscopetag
+set cscopetagorder=1
 
 "set wildchar=<Tab>
 set wildmenu
