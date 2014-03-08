@@ -2,39 +2,35 @@
 	name = Michael Cadiz
 	email = michael.cadiz@gmail.com
 [core]
-    # Tell Git to convert CRLF to LF on commit but not the other way around.
-    # Leave CRLF endings in Windows checkouts but LF endings on Mac and
-    # Linux systems and in the repository.
+	# Tell Git to convert CRLF to LF on commit but not the other way around.
+	# Leave CRLF endings in Windows checkouts but LF endings on Mac and
+	# Linux systems and in the repository.
 	autocrlf = input
+	pager = less -x1,5
+	excludesfile = ~/.gitignore_global
 [alias]
 	st = status -s
 	ci = commit
 	br = branch
 	co = checkout
-	df = difftool --no-prompt
-#	For systems w/o X
-#	df = diff
+	df = diff
+	dfl = diff
 	wc = whatchanged
 	unstage = reset HEAD
 	ls-untracked = ls-files --other --exclude-standard
-	gr = log --graph --oneline --decorate
+	gr = log --graph --pretty=format:'%h %Cblue%d%Creset %s %Cgreen%an%Creset %Cred%ar%Creset'
 	graph = log --graph --oneline
+	log-stat = log --stat
 	cl = clean -f -d -X
+	rhhh = reset --hard HEAD
+	short-rev = rev-parse --short
 [color]
 	ui = true
-[diff]
-	tool = tkdiff
-[merge]
-	tool = tkdiff
-[mergetool "tkdiff"]
-	path = /Users/mcadiz/bin/tkdiff
-	keepBackup = false
-	trustExitCode = false
-[commit]
-	template = /Users/mcadiz/.gitmessage.txt
 [push]
-	default = simple
+	default = upstream
 [branch]
 	autosetuprebase = always
 [branch "master"]
 	rebase = true
+[log]
+	date = local

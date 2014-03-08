@@ -14,3 +14,18 @@
 
 --langdef=CONF
 --langmap=CONF:.conf
+
+--langdef=TT
+--langmap=TT:.tt
+
+--langdef=CSS
+--langmap=CSS:.css
+
+--langdef=CSV
+--langmap=CSV:.csv
+
+--langdef=VTL
+--langmap=VTL:.vtl
+
+--langdef=VM
+--langmap=VM:.vm

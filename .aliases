@@ -1,22 +1,22 @@
-alias vi='vim'
-alias diff='diff -u'
-alias ls='ls -F'
-alias sl=ls
+alias Less='less'
 alias Ls=ls
+alias Sort='sort'
+alias amke='make'
+alias cdws='cd $WS'
+alias cdwy='cd "$HOME/ws/"`if [ ! -d "$WS" ]; then mkws && ls $WS/../ | tail -n 2 | head -n 1 ; else ls $WS/../ | tail -n 2 | head -n 1; fi`'
+alias clena=clean
+alias diff='diff -u'
 alias dir=ls
+alias dirs='dirs -l -p -v'
 alias gitk='gitk --all'
+alias givm='gvim'
+alias grep='egrep -Ea --exclude={cscope.out,tags}'
 alias h='history | sort -r'
 alias less='less -X'
-alias Less='less'
-alias dirs='dirs -l -p -v'
-# grep: ignore binary files, use extended-regexp, exclude cscope/ctags
-alias grep='egrep -Ea --exclude={cscope.out,tags}'
-alias xml_pp='xml_pp -v -l -s indented'
-alias amke='make'
-alias clena=clean
-alias srot='sort'
-alias Sort='sort'
+alias ls='ls -F'
+alias sl=ls
 alias snv='svn'
-alias cdws='cd $HOME/ws/`date +%Y%m%d`'
-alias cdwy='cd "$HOME/ws/"`if [ ! -d "$WS" ]; then mkws && ls $WS/../ | tail -n 2 | head -n 1 ; else ls $WS/../ | tail -n 2 | head -n 1; fi`'
+alias srot='sort'
 alias ssh='ssh -A'
+alias vi='vim'
+alias xml_pp='xml_pp -v -l -s indented'

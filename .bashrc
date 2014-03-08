@@ -1,32 +1,38 @@
 # .bashrc
 
-# Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# User specific aliases and functions
+function parse_git_branch
+{
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
+}
 
-BASE_DIR=$HOME'/ws'
-WS_NAME=$BASE_DIR/`date '+%Y%m%d'`
-
-export WS=$WS_NAME
 export EDITOR='vim'
-export SVN_EDITOR='vim'
-export PS1='\h:\w[$WINDOW]$ '
 export IGNOREEOF=2
-
-set -o emacs
-
-. $HOME/.aliases
-. $HOME/.git-completion.bash
+export NODE_PATH=/usr/local/lib/node_modules
+export PAGER=less
+export PS1='\h:\w$(parse_git_branch)$ '
 
 export PATH=\
 $HOME/bin:\
 $HOME/usr/local/bin:\
+$HOME/usr/local/sbin:\
 /bin:\
 /sbin:\
+/usr/local/bin:\
 /usr/bin:\
 /usr/sbin:\
-/usr/local/bin:\
+/Developer/usr/bin:\
 $PATH
+
+export MANPATH=\
+$HOME/usr/local/share/man:\
+$MANPATH
+
+. "${HOME}/bin/setws"
+. ~/.aliases
+. ~/.git-completion.bash
+
+set -o emacs

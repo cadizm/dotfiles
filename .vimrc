@@ -1,3 +1,4 @@
+
 set nocompatible
 set hlsearch
 set incsearch
@@ -15,6 +16,10 @@ set history=1000
 set winaltkeys=no
 set cscopetag
 set cscopetagorder=1
+
+syntax on
+filetype on
+filetype plugin on
 
 "set wildchar=<Tab>
 set wildmenu
@@ -81,6 +86,11 @@ function! <SID>KillLine()
   endif
 endfunction
 
-autocmd FileType xml setlocal shiftwidth=2 tabstop=2
+au FileType xml setlocal shiftwidth=2 tabstop=2
+au FileType ruby setlocal shiftwidth=2 tabstop=2
 
-:filetype plugin on
+au BufNewFile,BufRead *.tt set ft=tt2html
+au BufNewFile,BufRead *.json set ft=json
+
+" remove trailing space on save
+au BufWritePre * :%s/\s\+$//e
