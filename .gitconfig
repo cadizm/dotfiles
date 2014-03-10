@@ -13,7 +13,7 @@
 	ci = commit
 	br = branch
 	co = checkout
-	df = diff
+	df = diff --ignore-space-at-eol
 	dfl = diff
 	wc = whatchanged
 	unstage = reset HEAD
