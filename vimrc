@@ -86,11 +86,15 @@ function! <SID>KillLine()
   endif
 endfunction
 
-au FileType xml setlocal shiftwidth=2 tabstop=2
-au FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType xml setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 au BufNewFile,BufRead *.tt set ft=tt2html
 au BufNewFile,BufRead *.json set ft=json
 
 " remove trailing space on save
-au BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
+
+" put quickfix window on the bottom
+" http://stackoverflow.com/questions/6726783/changing-default-position-of-quickfix-window-in-vim
+autocmd FileType qf wincmd J

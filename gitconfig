@@ -13,19 +13,33 @@
 	ci = commit
 	br = branch
 	co = checkout
+#	df = difftool --no-prompt
+#	For systems w/o X
 	df = diff --ignore-space-at-eol
 	dfl = diff
 	wc = whatchanged
 	unstage = reset HEAD
 	ls-untracked = ls-files --other --exclude-standard
+#	gr = log --graph --oneline --decorate
 	gr = log --graph --pretty=format:'%h %Cblue%d%Creset %s %Cgreen%an%Creset %Cred%ar%Creset'
-	graph = log --graph --oneline
 	log-stat = log --stat
 	cl = clean -f -d -X
 	rhhh = reset --hard HEAD
 	short-rev = rev-parse --short
+    last-touched = log -n 1 --pretty=format:'%cn %h %ar'
 [color]
 	ui = true
+[diff]
+	tool = tkdiff
+[merge]
+	tool = tkdiff
+	verbosity = 5
+[mergetool "tkdiff"]
+	path = /Users/mcadiz/bin/tkdiff
+	keepBackup = false
+	trustExitCode = false
+[commit]
+	template = /Users/mcadiz/.gitmessage.txt
 [push]
 	default = upstream
 [branch]
@@ -34,3 +48,6 @@
 	rebase = true
 [log]
 	date = local
+[grep]
+	extendRegexp = true
+	lineNumber = true
