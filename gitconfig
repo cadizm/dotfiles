@@ -39,7 +39,7 @@
 	keepBackup = false
 	trustExitCode = false
 [commit]
-	template = /Users/mcadiz/.gitmessage.txt
+#	template = /Users/mcadiz/.gitmessage.txt
 [push]
 	default = upstream
 [branch]
