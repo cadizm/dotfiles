@@ -1,0 +1,8 @@
+[dotfiles]
+repository = ~/workspace/src/dotfiles
+ignore = [
+    '.git',
+    '.gitignore',
+    '*.swp'
+]
+packages = ['vim']
