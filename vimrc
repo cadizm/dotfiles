@@ -97,4 +97,5 @@ au BufNewFile,BufRead *.json set ft=json
 
 " put quickfix window on the bottom
 " http://stackoverflow.com/questions/6726783/changing-default-position-of-quickfix-window-in-vim
-autocmd FileType qf wincmd J
+"autocmd FileType qf wincmd J
+botright cwindow
