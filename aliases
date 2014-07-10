@@ -20,3 +20,4 @@ alias srot='sort'
 alias ssh='ssh -A'
 alias vi='vim'
 alias xml_pp='xml_pp -v -l -s indented'
+alias echopath="echo $PATH | sed 's/:/\n/g'"
