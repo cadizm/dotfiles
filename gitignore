@@ -1,0 +1,11 @@
+ID
+tags
+*.mp
+*.o
+*.pyc
+*.session
+*.swo
+*.swp
+*.class
+*.session.vim
+.DS_Store
