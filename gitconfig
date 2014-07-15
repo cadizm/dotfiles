@@ -7,7 +7,7 @@
 	# Linux systems and in the repository.
 	autocrlf = input
 	pager = less -x1,5
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
 [alias]
 	st = status -s
 	ci = commit
