@@ -11,7 +11,7 @@ alias dirs='dirs -l -p -v'
 alias gitk='gitk --all'
 alias givm='gvim'
 alias grep='egrep -Ea --exclude={cscope.out,tags}'
-alias h='history | sort -r'
+alias h='history | grep'
 alias less='less -X'
 alias ls='ls -F'
 alias sl=ls
