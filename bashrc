@@ -49,6 +49,7 @@ $HOME/usr/local/sbin:\
 /usr/bin:\
 /usr/sbin:\
 /Developer/usr/bin:\
+/Applications/Racket\ v6.0.1/bin:\
 $PATH
 
 export MANPATH=$MANPATH:\

@@ -7,4 +7,4 @@ set guioptions-=T
 "set gcr=a:blinkon0
 syntax on
 colorscheme mc
-"winpos 1300 1
+winpos 10 30
