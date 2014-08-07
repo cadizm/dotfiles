@@ -16,6 +16,7 @@ alias grep='egrep -Ea --exclude={cscope.out,tags}'
 alias h='history | grep'
 alias snv='svn'
 alias ssh='ssh -A'
+alias ussh='ussh --nofwd'
 alias vi='vim'
 alias xml_pp='xml_pp -v -l -s indented'
 alias echopath="echo $PATH | sed 's/:/\n/g'"
