@@ -37,7 +37,6 @@ export LESS=-XR
 export MAVEN_OPTS='-Xms256m -Xmx512m'
 export PERL5LIB=/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level:/Users/mcadiz/workspace/src/trunk.git/lib
 export NODE_PATH=/usr/local/lib/node_modules
-export VIRTUALENV_PYTHON=/usr/local/bin/python
 
 export PATH=\
 $HOME/bin:\
@@ -58,9 +57,13 @@ $HOME/usr/local/share/man
 . ~/.aliases
 . ~/.git-completion.bash
 . "${HOME}/bin/setws"
-. /usr/local/bin/virtualenvwrapper.sh
 
 set -o emacs
+
+if [[ `uname` = "Darwin" ]]; then
+    export VIRTUALENV_PYTHON=/usr/local/bin/python
+    . /usr/local/bin/virtualenvwrapper.sh
+fi
 
 function parse_git_branch
 {
