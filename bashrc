@@ -37,6 +37,8 @@ export LESS=-XR
 export MAVEN_OPTS='-Xms256m -Xmx512m'
 export PERL5LIB=/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level:/Users/mcadiz/workspace/src/trunk.git/lib
 export NODE_PATH=/usr/local/lib/node_modules
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/workspace/src/gopath
 
 export PATH=\
 $HOME/bin:\
@@ -49,6 +51,8 @@ $HOME/usr/local/sbin:\
 /usr/sbin:\
 /Developer/usr/bin:\
 /Applications/Racket\ v6.0.1/bin:\
+$GOROOT/bin:\
+$GOPATH/bin:\
 $PATH
 
 export MANPATH=$MANPATH:\

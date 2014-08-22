@@ -86,12 +86,6 @@ function! <SID>KillLine()
   endif
 endfunction
 
-autocmd FileType xml setlocal shiftwidth=2 tabstop=2
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
-
-au BufNewFile,BufRead *.tt set ft=tt2html
-au BufNewFile,BufRead *.json set ft=json
-
 " remove trailing space on save
 "autocmd BufWritePre * :%s/\s\+$//e
 
