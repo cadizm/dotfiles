@@ -73,3 +73,9 @@ function parse_git_branch
 {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
 }
+
+BASHRC_LOCAL=$HOME/.bashrc.local
+if [[ -f "${BASHRC_LOCAL}" ]]; then
+    echo "Sourcing ${BASHRC_LOCAL}"
+    . ${BASHRC_LOCAL}
+fi
