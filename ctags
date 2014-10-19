@@ -29,3 +29,7 @@
 
 --langdef=VM
 --langmap=VM:.vm
+
+--langdef=YAML
+--langmap=YAML:.yml
+--regex-YAML=/^([a-zA-Z0-9_]+):/\1/d,definition/

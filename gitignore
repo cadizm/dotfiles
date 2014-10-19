@@ -8,4 +8,5 @@ tags
 *.swp
 *.class
 *.session.vim
+*~
 .DS_Store

@@ -87,7 +87,7 @@ function! <SID>KillLine()
 endfunction
 
 " remove trailing space on save
-"autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " put quickfix window on the bottom
 " http://stackoverflow.com/questions/6726783/changing-default-position-of-quickfix-window-in-vim

@@ -23,7 +23,7 @@
 #	gr = log --graph --oneline --decorate
 	gr = log --graph --pretty=format:'%h %Cblue%d%Creset %s %Cgreen%an%Creset %Cred%ar%Creset'
 	log-stat = log --stat
-	cl = clean -f -d -X
+#	cl = clean -f -d -X
 	rhhh = reset --hard HEAD
 	short-rev = rev-parse --short
     last-touched = log -n 1 --pretty=format:'%cn %h %ar'
@@ -51,3 +51,5 @@
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[pager]
+	status = false
