@@ -34,6 +34,7 @@
 [merge]
 	tool = tkdiff
 	verbosity = 5
+	ff = false
 [mergetool "tkdiff"]
 	path = /Users/mcadiz/bin/tkdiff
 	keepBackup = false
