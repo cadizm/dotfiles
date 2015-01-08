@@ -1,6 +1,7 @@
 alias ls='ls -F'
 alias Ls=ls
 alias sl=ls
+alias ll='ls -l'
 alias srot='sort'
 alias Sort='sort'
 alias less='less -X'
@@ -12,6 +13,7 @@ alias dir=ls
 alias dirs='dirs -l -p -v'
 alias gitk='gitk --all'
 alias givm='gvim'
+alias gvimr='gvim --remote'
 alias grep='egrep -Ea --exclude={cscope.out,tags}'
 alias h='history | grep'
 alias snv='svn'
