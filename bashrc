@@ -35,8 +35,6 @@ export USE_HOME_LOG_DIR=1
 export PAGER=less
 export LESS=-XRi
 export MAVEN_OPTS='-Xms256m -Xmx512m'
-export PERL5LIB=/Applications/Xcode.app/Contents/Developer/Library/Perl/5.16/darwin-thread-multi-2level:/Users/mcadiz/workspace/src/trunk.git/lib
-export NODE_PATH=/usr/local/lib/node_modules
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/workspace/src/gopath
 
@@ -50,7 +48,6 @@ $HOME/usr/local/sbin:\
 /usr/bin:\
 /usr/sbin:\
 /Developer/usr/bin:\
-/Applications/Racket\ v6.0.1/bin:\
 $GOROOT/bin:\
 $GOPATH/bin:\
 $PATH
@@ -65,8 +62,9 @@ $HOME/usr/local/share/man
 set -o emacs
 
 if [[ `uname` = "Darwin" ]]; then
-    export VIRTUALENV_PYTHON=/usr/local/bin/python
-    . /usr/local/bin/virtualenvwrapper.sh
+    export WORKON_HOME=${HOME}/.virtualenvs
+    mkdir -p $WORKON_HOME
+    source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 function parse_git_branch
