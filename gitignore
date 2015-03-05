@@ -10,3 +10,4 @@ tags
 *.session.vim
 *~
 .DS_Store
+.eggs

@@ -93,3 +93,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 " http://stackoverflow.com/questions/6726783/changing-default-position-of-quickfix-window-in-vim
 "autocmd FileType qf wincmd J
 botright cwindow
+
+let g:netrw_liststyle=3
