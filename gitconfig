@@ -13,34 +13,35 @@
 	ci = commit
 	br = branch
 	co = checkout
-#	df = difftool --no-prompt
-#	For systems w/o X
+	# For systems w/o X
 	df = diff --ignore-space-at-eol
+	dftool = difftool --no-prompt
 	dfl = diff
 	wc = whatchanged
 	unstage = reset HEAD
 	ls-untracked = ls-files --other --exclude-standard
-#	gr = log --graph --oneline --decorate
-	gr = log --graph --pretty=format:'%h %Cblue%d%Creset %s %Cgreen%an%Creset %Cred%ar%Creset'
+	gr = log --graph --decorate=short
 	log-stat = log --stat
-#	cl = clean -f -d -X
+	clean = clean --force --interactive
+	cl = clean --force --interactive
 	rhhh = reset --hard HEAD
 	short-rev = rev-parse --short
     last-touched = log -n 1 --pretty=format:'%cn %h %ar'
 [color]
 	ui = true
 [diff]
-	tool = tkdiff
+	tool = opendiff
+	submodule = log
 [merge]
-	tool = tkdiff
+	tool = opendiff
 	verbosity = 5
 	ff = false
-[mergetool "tkdiff"]
-	path = /Users/mcadiz/bin/tkdiff
+[mergetool "opendiff"]
+	path = opendiff
 	keepBackup = false
 	trustExitCode = false
 [commit]
-#	template = /Users/mcadiz/.gitmessage.txt
+	template = ~/.git-commit.tmpl
 [push]
 	default = upstream
 [branch]
@@ -54,3 +55,5 @@
 	lineNumber = true
 [pager]
 	status = false
+[status]
+	submodulesummary = 1
