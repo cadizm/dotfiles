@@ -13,6 +13,7 @@
 	ci = commit
 	br = branch
 	co = checkout
+    smu = submodule update
 	# For systems w/o X
 	df = diff --ignore-space-at-eol
 	dftool = difftool --no-prompt
