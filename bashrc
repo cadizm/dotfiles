@@ -45,6 +45,7 @@ $HOME/usr/local/sbin:\
 /bin:\
 /sbin:\
 /usr/local/bin:\
+/usr/local/sbin:\
 /usr/bin:\
 /usr/sbin:\
 /Developer/usr/bin:\
