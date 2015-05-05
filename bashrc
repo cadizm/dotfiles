@@ -35,8 +35,9 @@ export USE_HOME_LOG_DIR=1
 export PAGER=less
 export LESS=-XRi
 export MAVEN_OPTS='-Xms256m -Xmx512m'
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/workspace/src/gopath
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/workspace/go
+export LANG='en_US.UTF-8'
 
 export PATH=\
 $HOME/bin:\
@@ -65,7 +66,7 @@ set -o emacs
 if [[ `uname` = "Darwin" ]]; then
     export WORKON_HOME=${HOME}/.virtualenvs
     mkdir -p $WORKON_HOME
-    source /usr/local/bin/virtualenvwrapper.sh
+    . /usr/local/bin/virtualenvwrapper.sh
 fi
 
 function parse_git_branch
@@ -73,8 +74,18 @@ function parse_git_branch
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
 }
 
+if [[ -n `which brew` ]]; then
+    if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
+      . $(brew --prefix)/etc/bash_completion
+    fi
+else
+    echo "No brew?"
+fi
+
 BASHRC_LOCAL=$HOME/.bashrc.local
 if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
     . ${BASHRC_LOCAL}
+else
+    echo "No .bashrc.local?"
 fi

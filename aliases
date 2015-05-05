@@ -1,6 +1,7 @@
 alias ls='ls -F'
 alias Ls=ls
 alias sl=ls
+alias l=ls
 alias ll='ls -l'
 alias srot='sort'
 alias Sort='sort'
@@ -25,3 +26,4 @@ alias xml_pp='xml_pp -v -l -s indented'
 alias echopath="echo $PATH | sed 's/:/\n/g'"
 alias cdws='cd $WS'
 alias cdwy='cd "$HOME/ws/"`if [ ! -d "$WS" ]; then mkws && ls $WS/../ | tail -n 2 | head -n 1 ; else ls $WS/../ | tail -n 2 | head -n 1; fi`'
+alias setres="export RESOLUTION=`system_profiler SPDisplaysDataType | grep 'Resolution' | sed 's/Resolution://' | sed 's/ //g'`"

@@ -1,3 +1,4 @@
 --pager
 --ignore-file=match:tags
 --ignore-dir=static
+--ignore-dir=.eggs

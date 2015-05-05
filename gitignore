@@ -4,6 +4,8 @@ tags
 *.o
 *.pyc
 *.session
+*.swm
+*.swn
 *.swo
 *.swp
 *.class

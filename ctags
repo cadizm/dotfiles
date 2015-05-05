@@ -15,6 +15,9 @@
 --langdef=CONF
 --langmap=CONF:.conf
 
+--langdef=CFG
+--langmap=CFG:.cfg
+
 --langdef=TT
 --langmap=TT:.tt
 

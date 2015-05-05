@@ -23,8 +23,8 @@
 	ls-untracked = ls-files --other --exclude-standard
 	gr = log --graph --decorate=short
 	log-stat = log --stat
-	clean = clean --force --interactive
-	cl = clean --force --interactive
+	clean = clean -nx
+	cl = clean -nx --dry-run
 	rhhh = reset --hard HEAD
 	short-rev = rev-parse --short
     last-touched = log -n 1 --pretty=format:'%cn %h %ar'
