@@ -21,9 +21,9 @@ syntax on
 filetype on
 filetype plugin on
 
-"set wildchar=<Tab>
 set wildmenu
 set wildmode=list:longest,full
+set wildchar=<Tab>
 
 map <C-Tab> :tabn<CR>
 map <C-Tab> :tabp<CR>

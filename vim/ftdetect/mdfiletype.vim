@@ -1,2 +1,1 @@
-
-au BufNewFile *. setlocal filetype=markdown fileencoding=utf-8 fileformat=unix
+au BufNewFile,BufRead *.md setlocal filetype=markdown fileencoding=utf-8 fileformat=unix

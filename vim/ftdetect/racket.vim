@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.rkt,*.rktl  set filetype=racket
+au BufNewFile,BufRead *.rkt,*.rktl  set filetype=racket
