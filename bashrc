@@ -82,6 +82,13 @@ else
     echo "No brew?"
 fi
 
+if [[ -n `which boot2docker` ]]; then
+    echo "Initializing boot2docker"
+    $(/usr/local/bin/boot2docker shellinit)
+else
+    echo "No docker?"
+fi
+
 BASHRC_LOCAL=$HOME/.bashrc.local
 if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
