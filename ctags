@@ -39,3 +39,6 @@
 
 --langdef=ROBOT
 --langmap=ROBOT:.robot
+
+--langdef=INI
+--langmap=INI:.ini
