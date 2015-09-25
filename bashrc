@@ -83,8 +83,12 @@ else
 fi
 
 if [[ -n `which boot2docker` ]]; then
-    echo "Initializing boot2docker"
-    $(/usr/local/bin/boot2docker shellinit)
+    if [[ `boot2docker status` != "poweroff" ]]; then
+        echo "Initializing boot2docker"
+        $(/usr/local/bin/boot2docker shellinit)
+    else
+        echo "boot2docker-vm not running, skipping shellinit"
+    fi
 else
     echo "No docker?"
 fi

@@ -1,6 +1,3 @@
 [nosetests]
-#with-progressive=1
-ipdb=1
-ipdb-failures=1
 stop=1
 logging-clear-handlers=1
