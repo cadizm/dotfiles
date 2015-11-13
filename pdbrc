@@ -1,1 +1,4 @@
-alias we with open("/tmp/e.html", "w") as ef: ef.write(%1.content)
+from pprint import pformat, pprint
+_L = locals()
+alias pl pprint(_L);
+alias dl with open('/tmp/locals.txt', 'w') as f: f.write(pformat(_L))
