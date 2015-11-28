@@ -38,6 +38,7 @@ export MAVEN_OPTS='-Xms256m -Xmx512m'
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/workspace/go
 export LANG='en_US.UTF-8'
+export NVM_DIR=$HOME/.nvm
 
 export PATH=\
 $HOME/bin:\
@@ -60,6 +61,7 @@ $HOME/usr/local/share/man
 . ~/.aliases
 . ~/.git-completion.bash
 . "${HOME}/bin/setws"
+. $(brew --prefix nvm)/nvm.sh
 
 set -o emacs
 
@@ -82,15 +84,25 @@ else
     echo "No brew?"
 fi
 
-if [[ -n `which boot2docker` ]]; then
-    if [[ `boot2docker status` != "poweroff" ]]; then
-        echo "Initializing boot2docker"
-        $(/usr/local/bin/boot2docker shellinit)
-    else
-        echo "boot2docker-vm not running, skipping shellinit"
-    fi
+DOCKER_COMPLETION=~/workspace/src/docker/contrib/completion/bash/docker
+if [[ -f $DOCKER_COMPLETION ]]; then
+    . $DOCKER_COMPLETION
 else
     echo "No docker?"
+fi
+
+DOCKER_MACHINE_COMPLETION=~/workspace/src/machine/contrib/completion/bash/docker-machine.bash
+if [[ -f $DOCKER_MACHINE_COMPLETION ]]; then
+    . $DOCKER_MACHINE_COMPLETION
+else
+    echo "No docker-machine?"
+fi
+
+DOCKER_COMPOSE_COMPLETION=~/workspace/src/compose/contrib/completion/bash/docker-compose
+if [[ -f $DOCKER_COMPOSE_COMPLETION ]]; then
+    . $DOCKER_COMPOSE_COMPLETION
+else
+    echo "No docker-compose?"
 fi
 
 BASHRC_LOCAL=$HOME/.bashrc.local
