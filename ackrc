@@ -2,3 +2,6 @@
 --ignore-file=match:tags
 --ignore-dir=static
 --ignore-dir=.eggs
+--ignore-dir=.webassets-cache
+--ignore-dir=dist
+--ignore-dir=gen

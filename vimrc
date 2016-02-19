@@ -95,3 +95,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 botright cwindow
 
 let g:netrw_liststyle=3
+
+" leader remapped to \
+nnoremap <leader>b oimport ipdb;ipdb.set_trace()<CR><ESC><S-V><S->>
