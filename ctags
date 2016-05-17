@@ -42,3 +42,6 @@
 
 --langdef=INI
 --langmap=INI:.ini
+
+--langdef=ERB
+--langmap=ERB:.erb

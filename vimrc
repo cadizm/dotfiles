@@ -98,3 +98,6 @@ let g:netrw_liststyle=3
 
 " leader remapped to \
 nnoremap <leader>b oimport ipdb;ipdb.set_trace()<CR><ESC><S-V><S->>
+
+" don't auto-insert comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

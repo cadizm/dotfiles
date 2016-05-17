@@ -31,7 +31,6 @@ fi
 export EDITOR='vim'
 export PS1='\h:\w$(parse_git_branch)$ '
 export IGNOREEOF=2
-export USE_HOME_LOG_DIR=1
 export PAGER=less
 export LESS=-XRi
 export MAVEN_OPTS='-Xms256m -Xmx512m'
@@ -71,6 +70,9 @@ if [[ `uname` = "Darwin" ]]; then
     . /usr/local/bin/virtualenvwrapper.sh
 fi
 
+# Load rbenv
+eval "$(rbenv init -)"
+
 function parse_git_branch
 {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
@@ -82,27 +84,6 @@ if [[ -n `which brew` ]]; then
     fi
 else
     echo "No brew?"
-fi
-
-DOCKER_COMPLETION=~/workspace/src/docker/contrib/completion/bash/docker
-if [[ -f $DOCKER_COMPLETION ]]; then
-    . $DOCKER_COMPLETION
-else
-    echo "No docker?"
-fi
-
-DOCKER_MACHINE_COMPLETION=~/workspace/src/machine/contrib/completion/bash/docker-machine.bash
-if [[ -f $DOCKER_MACHINE_COMPLETION ]]; then
-    . $DOCKER_MACHINE_COMPLETION
-else
-    echo "No docker-machine?"
-fi
-
-DOCKER_COMPOSE_COMPLETION=~/workspace/src/compose/contrib/completion/bash/docker-compose
-if [[ -f $DOCKER_COMPOSE_COMPLETION ]]; then
-    . $DOCKER_COMPOSE_COMPLETION
-else
-    echo "No docker-compose?"
 fi
 
 BASHRC_LOCAL=$HOME/.bashrc.local

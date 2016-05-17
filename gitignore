@@ -11,6 +11,8 @@ tags
 *.class
 *.session.vim
 *~
+*.qa3
 .DS_Store
 .eggs
 token.mat
+.byebug_history
