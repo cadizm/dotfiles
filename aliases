@@ -16,7 +16,7 @@ alias gitk='gitk --all'
 alias givm='gvim'
 alias gvimr='gvim --remote'
 alias grep='egrep -Ea --exclude={cscope.out,tags}'
-alias h='history | grep'
+alias h=history
 alias snv='svn'
 alias ssh-start='eval `ssh-agent`'
 alias ssh='ssh -AY'
