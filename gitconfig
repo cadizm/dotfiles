@@ -13,7 +13,7 @@
 	ci = commit
 	br = branch
 	co = checkout
-    smu = submodule update
+	smu = submodule update
 	# For systems w/o X
 	df = diff --ignore-space-at-eol
 	dftool = difftool --no-prompt
@@ -25,9 +25,10 @@
 	log-stat = log --stat
 	clean = clean -nx
 	cl = clean -nx --dry-run
+	pristine = clean -dfx
 	rhhh = reset --hard HEAD
 	short-rev = rev-parse --short
-    last-touched = log -n 1 --pretty=format:'%cn %h %ar'
+	last-touched = log -n 1 --pretty=format:'%cn %h %ar'
 [color]
 	ui = true
 [diff]
