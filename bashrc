@@ -13,7 +13,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 shopt -s histappend
 
 # share command history
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+#export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -73,9 +73,6 @@ if [[ `uname` = "Darwin" ]]; then
     mkdir -p $WORKON_HOME
     . /usr/local/bin/virtualenvwrapper.sh
 fi
-
-# Load rbenv
-eval "$(rbenv init -)"
 
 function parse_git_branch
 {

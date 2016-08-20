@@ -20,7 +20,6 @@ alias h=history
 alias snv='svn'
 alias ssh-start='eval `ssh-agent`'
 alias ssh='ssh -AY'
-alias ussh='ussh --nofwd'
 alias vi='vim'
 alias xml_pp='xml_pp -v -l -s indented'
 alias echopath="echo $PATH | sed 's/:/\n/g'"
