@@ -86,3 +86,8 @@ if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
     . ${BASHRC_LOCAL}
 fi
+
+# don't use apple's openssl
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include
+export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
