@@ -12,6 +12,14 @@
 	<string>D1FBB1E5-42EA-44A5-A5A0-5A40D1C25BCD</string>
 	<key>HideTabNumber</key>
 	<false/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>32</integer>
+	<key>HotkeyCode</key>
+	<integer>49</integer>
+	<key>HotkeyModifiers</key>
+	<integer>1048840</integer>
 	<key>JobName</key>
 	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -48,7 +56,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1831 395 675 367 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>959 244 918 498 0 0 2560 1417 </string>
+	<string>979 533 796 474 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
