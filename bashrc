@@ -50,10 +50,10 @@ export PATH=\
 $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
-/bin:\
-/sbin:\
 /usr/local/bin:\
 /usr/local/sbin:\
+/bin:\
+/sbin:\
 /usr/bin:\
 /usr/sbin:\
 $GOROOT/bin:\
@@ -71,6 +71,11 @@ if [[ `uname` = "Darwin" ]]; then
     export WORKON_HOME=${HOME}/.virtualenvs
     mkdir -p $WORKON_HOME
     . /usr/local/bin/virtualenvwrapper.sh
+
+    # don't use apple's openssl
+    export LDFLAGS=-L/usr/local/opt/openssl/lib
+    export CPPFLAGS=-I/usr/local/opt/openssl/include
+    export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 fi
 
 if [[ -n `which brew` ]]; then
@@ -86,8 +91,3 @@ if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
     . ${BASHRC_LOCAL}
 fi
-
-# don't use apple's openssl
-export LDFLAGS=-L/usr/local/opt/openssl/lib
-export CPPFLAGS=-I/usr/local/opt/openssl/include
-export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig

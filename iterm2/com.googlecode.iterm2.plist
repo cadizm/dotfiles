@@ -60,7 +60,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1831 395 675 367 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>979 549 796 474 0 0 1920 1177 </string>
+	<string>979 549 796 474 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>907 567 1012 603 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
@@ -1343,6 +1343,8 @@
 	<false/>
 	<key>WindowNumber</key>
 	<false/>
+	<key>WordCharacters</key>
+	<string>/-+\~_</string>
 	<key>iTerm Version</key>
 	<string>3.0.10</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
