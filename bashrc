@@ -78,6 +78,9 @@ if [[ `uname` = "Darwin" ]]; then
     export LDFLAGS=-L/usr/local/opt/openssl/lib
     export CPPFLAGS=-I/usr/local/opt/openssl/include
     export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+
+    export LDFLAGS="${LDFLAGS} -L/usr/local/opt/libxml2/lib"
+    export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/libxml2/include"
 fi
 
 if [[ -n `which brew` ]]; then
@@ -86,6 +89,10 @@ if [[ -n `which brew` ]]; then
     if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
       . $(brew --prefix)/etc/bash_completion
     fi
+fi
+
+if [[ -n `which aws_completer` ]]; then
+    complete -C `which aws_completer` aws
 fi
 
 BASHRC_LOCAL=$HOME/.bashrc.local
