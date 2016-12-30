@@ -12,7 +12,9 @@ tags
 *.session.vim
 *~
 *.qa3
+*.sqlite3
 .DS_Store
 .eggs
-token.mat
 .byebug_history
+.vagrant
+token.mat
