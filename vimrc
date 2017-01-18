@@ -16,6 +16,7 @@ set history=1000
 set winaltkeys=no
 set cscopetag
 set cscopetagorder=1
+set autowrite
 
 syntax on
 filetype on
@@ -96,8 +97,11 @@ botright cwindow
 
 let g:netrw_liststyle=3
 
-" leader remapped to \
-nnoremap <leader>b oimport ipdb;ipdb.set_trace()<CR><ESC><S-V><S->>
-
 " don't auto-insert comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" go leader key build/run
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
+" favor goimports over gofmt
+let g:go_fmt_command = "goimports"
