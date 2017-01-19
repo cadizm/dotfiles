@@ -9,3 +9,6 @@ Pry::Commands.block_command "dl", "Dump locals to log" do
   File.open('/tmp/foo.json', 'w') { |f| f.write(foo) }
   output.puts "Dumped locals to \"/tmp/foo.json\""
 end
+
+require 'awesome_print'
+AwesomePrint.pry!
