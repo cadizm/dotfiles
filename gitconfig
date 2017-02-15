@@ -1,6 +1,6 @@
 [user]
 	name = Michael Cadiz
-	email = michael.cadiz@gmail.com
+	email = mike@cadizm.com
 [core]
 	# Tell Git to convert CRLF to LF on commit but not the other way around.
 	# Leave CRLF endings in Windows checkouts but LF endings on Mac and

@@ -58,6 +58,7 @@ $HOME/usr/local/sbin:\
 /sbin:\
 /usr/bin:\
 /usr/sbin:\
+/usr/texbin:\
 $GOROOT/bin:\
 $GOPATH/bin
 
