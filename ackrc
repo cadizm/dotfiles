@@ -5,3 +5,6 @@
 --ignore-dir=.webassets-cache
 --ignore-dir=dist
 --ignore-dir=gen
+--ignore-dir=log
+--ignore-dir=coverage
+--ignore-dir=tmp
