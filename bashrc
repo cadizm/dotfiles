@@ -102,3 +102,7 @@ if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
     . ${BASHRC_LOCAL}
 fi
+
+if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
+    export PATH=$PATH:/Library/TeX/Root/bin/x86_64-darwin
+fi
