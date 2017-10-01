@@ -106,3 +106,7 @@ fi
 if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
     export PATH=$PATH:/Library/TeX/Root/bin/x86_64-darwin
 fi
+
+# Don't want gpg "Inappropriate ioctl for device" error
+# https://github.com/keybase/keybase-issues/issues/1712
+export GPG_TTY=$(tty)
