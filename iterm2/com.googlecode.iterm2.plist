@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>D1FBB1E5-42EA-44A5-A5A0-5A40D1C25BCD</string>
 	<key>HideTabNumber</key>
@@ -77,9 +79,11 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>243 339 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>482 446 956 427 0 0 1440 877 </string>
+	<string>214 494 1705 683 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 9 1440 555 0 0 1440 877 </string>
+	<string>641 478 1278 699 0 0 1920 1177 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>268 109 865 619 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1367,7 +1371,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-29T23:23:56Z</date>
+	<date>2017-09-29T00:42:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
