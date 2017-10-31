@@ -1,0 +1,10 @@
+\set QUIET 1
+\set PROMPT1 '%M:%> %n@%/%R%#%x '
+\pset null '[NULL]'
+\set COMP_KEYWORD_CASE upper
+\timing
+\x auto
+\set VERBOSITY verbose
+\unset QUIET
+
+SET search_path TO bi_dw;
