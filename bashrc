@@ -59,7 +59,6 @@ $HOME/usr/local/sbin:\
 /usr/bin:\
 /usr/sbin:\
 /usr/texbin:\
-/usr/local/Cellar/postgresql@9.5/9.5.6/bin:\
 $GOROOT/bin:\
 $GOPATH/bin
 
