@@ -109,7 +109,3 @@ fi
 # Don't want gpg "Inappropriate ioctl for device" error
 # https://github.com/keybase/keybase-issues/issues/1712
 export GPG_TTY=$(tty)
-
-
-export CFLAGS="-I/usr/local/include/tesseract -I/usr/local/include/leptonica"
-export LDFLAGS="-L/usr/local/Cellar/tesseract/3.05.01/lib -L/usr/local/Cellar/leptonica/1.74.4_1/lib"

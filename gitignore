@@ -15,6 +15,7 @@ tags
 *.sqlite3
 .DS_Store
 .eggs
+.bash_history
 .byebug_history
 .vagrant
 token.mat
