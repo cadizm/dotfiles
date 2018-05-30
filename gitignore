@@ -18,4 +18,5 @@ tags
 .bash_history
 .byebug_history
 .vagrant
+.lesshst
 token.mat
