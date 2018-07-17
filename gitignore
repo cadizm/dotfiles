@@ -19,4 +19,5 @@ tags
 .byebug_history
 .vagrant
 .lesshst
+.psql_history
 token.mat
