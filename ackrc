@@ -1,5 +1,6 @@
 --pager
---ignore-file=match:tags
+--ignore-file=is:tags
+--ignore-file=is:.pry_history
 --ignore-dir=static
 --ignore-dir=.eggs
 --ignore-dir=.webassets-cache

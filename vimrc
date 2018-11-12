@@ -87,6 +87,9 @@ function! <SID>KillLine()
   endif
 endfunction
 
+" http://vim.wikia.com/wiki/Editing_crontab
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 " remove trailing space on save
 autocmd BufWritePre * :%s/\s\+$//e
 

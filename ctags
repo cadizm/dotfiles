@@ -145,3 +145,4 @@
 --exclude=bower_components
 --exclude=test
 --exclude=tests
+--exclude=build
