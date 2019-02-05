@@ -1,9 +1,11 @@
 --pager
 --ignore-file=is:tags
+--ignore-file=is:.bash_history
 --ignore-file=is:.pry_history
 --ignore-dir=static
 --ignore-dir=.eggs
 --ignore-dir=.webassets-cache
+--ignore-dir=.bundle
 --ignore-dir=dist
 --ignore-dir=gen
 --ignore-dir=log
