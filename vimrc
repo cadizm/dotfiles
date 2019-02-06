@@ -1,4 +1,3 @@
-
 set nocompatible
 set hlsearch
 set incsearch
@@ -17,6 +16,9 @@ set winaltkeys=no
 set cscopetag
 set cscopetagorder=1
 set autowrite
+
+" https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
 
 syntax on
 filetype on
