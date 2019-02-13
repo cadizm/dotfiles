@@ -40,6 +40,7 @@ function parse_git_branch
 }
 
 export EDITOR='vim'
+export GEM_EDITOR='gvim'
 export PS1='\h:\w$(parse_git_branch)$ '
 export IGNOREEOF=2
 export PAGER=less
@@ -105,6 +106,26 @@ fi
 if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
     export PATH=$PATH:/Library/TeX/Root/bin/x86_64-darwin
 fi
+
+# https://github.com/fnando/gem-open#bash-completion
+_gemopencomplete() {
+    local cmd=${COMP_WORDS[0]}
+    local subcmd=${COMP_WORDS[1]}
+    local cur=${COMP_WORDS[COMP_CWORD]}
+
+    case "$subcmd" in
+        open)
+            words=`ruby -rubygems -e 'puts Dir["{#{Gem::Specification.dirs.join(",")}}/*.gemspec"].collect {|s| File.basename(s).gsub(/\.gemspec$/, "")}'`
+            ;;
+        *)
+            return
+            ;;
+    esac
+
+    COMPREPLY=($(compgen -W "$words" -- $cur))
+    return 0
+}
+complete -o default -F _gemopencomplete gem
 
 # Don't want gpg "Inappropriate ioctl for device" error
 # https://github.com/keybase/keybase-issues/issues/1712
