@@ -1,3 +1,6 @@
+Pry.config.pager = true
+
+require 'pry-byebug'
 Pry.commands.alias_command 'c', 'continue'
 Pry.commands.alias_command 's', 'step'
 Pry.commands.alias_command 'n', 'next'
@@ -9,6 +12,3 @@ Pry::Commands.block_command "dl", "Dump locals to log" do
   File.open('/tmp/foo.json', 'w') { |f| f.write(foo) }
   output.puts "Dumped locals to \"/tmp/foo.json\""
 end
-
-require 'awesome_print'
-AwesomePrint.pry!

@@ -1,6 +1,6 @@
 AwesomePrint.defaults = {
   indent: 2,
   index: false,
-  multiline: false,
+  multiline: true,
   sort_keys: true,
 }
