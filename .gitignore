@@ -1,3 +1,4 @@
+env.local
 gnupg/crls.d/
 gnupg/gpg-agent.log
 gnupg/private-keys-v1.d/
