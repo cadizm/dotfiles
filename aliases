@@ -27,3 +27,4 @@ alias ssh-start='eval `ssh-agent`'
 alias ssh='ssh -AY'
 alias vi=vim
 alias xml_pp='xml_pp -v -l -s indented'
+alias scren=screen

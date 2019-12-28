@@ -110,3 +110,6 @@ autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 " favor goimports over gofmt
 let g:go_fmt_command = "goimports"
+
+" https://github.com/vim-python/python-syntax
+let g:python_highlight_all = 1

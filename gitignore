@@ -21,3 +21,4 @@ tags
 .lesshst
 .psql_history
 token.mat
+.env.test.local

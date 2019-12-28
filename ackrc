@@ -11,3 +11,5 @@
 --ignore-dir=log
 --ignore-dir=coverage
 --ignore-dir=tmp
+--ignore-dir=build
+--ignore-dir=__tests__

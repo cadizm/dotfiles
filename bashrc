@@ -55,6 +55,7 @@ $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
 /usr/local/bin:\
 /usr/local/sbin:\
+/usr/local/opt/curl/bin:\
 /bin:\
 /sbin:\
 /usr/bin:\
