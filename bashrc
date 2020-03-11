@@ -131,3 +131,6 @@ complete -o default -F _gemopencomplete gem
 # Don't want gpg "Inappropriate ioctl for device" error
 # https://github.com/keybase/keybase-issues/issues/1712
 export GPG_TTY=$(tty)
+
+# https://support.apple.com/en-us/HT208050
+export BASH_SILENCE_DEPRECATION_WARNING=1
