@@ -68,8 +68,13 @@ onoremap <C-d> <Del>
 cnoremap <M-BS> <C-w>
 inoremap <M-BS> <C-w>
 
+" map <Command-d> to KillWord (same as meta)
+inoremap <silent> <D-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <M-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
+
+cnoremap <C-g> <Nop>
+inoremap <C-g> <Esc>
 
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))

@@ -49,10 +49,16 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/workspace/go
 export LANG='en_US.UTF-8'
 
+# brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
 export PATH=\
 $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
+$JAVA_HOME/bin:\
+/usr/local/opt/tomcat@8/bin:\
+/usr/local/opt/thrift@0.9/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 /usr/local/opt/curl/bin:\
@@ -62,7 +68,8 @@ $HOME/usr/local/sbin:\
 /usr/sbin:\
 /usr/texbin:\
 $GOROOT/bin:\
-$GOPATH/bin
+$GOPATH/bin:\
+/Applications/MacVim.app/Contents/bin
 
 export MANPATH=$MANPATH:\
 $HOME/usr/local/share/man
@@ -74,6 +81,7 @@ set -o emacs
 
 if [[ `uname` = "Darwin" ]]; then
     export WORKON_HOME=${HOME}/.virtualenvs
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
     mkdir -p $WORKON_HOME
     . /usr/local/bin/virtualenvwrapper.sh
 
@@ -87,8 +95,6 @@ if [[ `uname` = "Darwin" ]]; then
 fi
 
 if [[ -n `which brew` ]]; then
-    export NVM_DIR=$HOME/.nvm
-    . $(brew --prefix nvm)/nvm.sh
     if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
       . $(brew --prefix)/etc/bash_completion
     fi

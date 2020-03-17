@@ -1,10 +1,10 @@
 {
-	"auths": {
-		"https://index.docker.io/v1/": {}
-	},
-	"HttpHeaders": {
-		"User-Agent": "Docker-Client/18.09.1 (darwin)"
-	},
-	"detachKeys": "ctrl-o,o",
-	"credsStore": "osxkeychain"
+  "credsStore" : "osxkeychain",
+  "detachKeys" : "ctrl-o,o",
+  "HttpHeaders" : {
+    "User-Agent" : "Docker-Client/18.09.1 (darwin)"
+  },
+  "auths" : {
+
+  }
 }

@@ -28,3 +28,4 @@ alias ssh='ssh -AY'
 alias vi=vim
 alias xml_pp='xml_pp -v -l -s indented'
 alias scren=screen
+alias adsf=asdf
