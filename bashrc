@@ -114,6 +114,9 @@ if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
     export PATH=$PATH:/Library/TeX/Root/bin/x86_64-darwin
 fi
 
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+. /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+
 # https://github.com/fnando/gem-open#bash-completion
 _gemopencomplete() {
     local cmd=${COMP_WORDS[0]}
