@@ -1,0 +1,3 @@
+set mainfont {Lucida Grande 12}
+set textfont {Monaco 12}
+set uifont {Lucida Grande 12}

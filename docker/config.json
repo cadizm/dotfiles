@@ -1,10 +1,10 @@
 {
-  "credsStore" : "osxkeychain",
+  "auths" : {
+
+  },
   "detachKeys" : "ctrl-o,o",
   "HttpHeaders" : {
     "User-Agent" : "Docker-Client/18.09.1 (darwin)"
   },
-  "auths" : {
-
-  }
+  "credsStore" : "osxkeychain"
 }

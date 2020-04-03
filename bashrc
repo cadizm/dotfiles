@@ -62,6 +62,7 @@ $JAVA_HOME/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 /usr/local/opt/curl/bin:\
+/usr/local/opt/mysql-client/bin:\
 /bin:\
 /sbin:\
 /usr/bin:\
