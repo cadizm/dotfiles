@@ -121,3 +121,6 @@ let g:go_fmt_command = "goimports"
 
 " https://github.com/vim-python/python-syntax
 let g:python_highlight_all = 1
+
+" https://github.com/hashivim/vim-terraform/blob/master/README.md#usage
+let g:terraform_fmt_on_save=1
