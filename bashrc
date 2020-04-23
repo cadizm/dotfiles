@@ -29,10 +29,8 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# enable programmable completion features
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
+# Complain if we don't have bash_completion
+. $(brew --prefix)/etc/bash_completion
 
 function parse_git_branch
 {
@@ -70,7 +68,8 @@ $JAVA_HOME/bin:\
 /usr/texbin:\
 $GOROOT/bin:\
 $GOPATH/bin:\
-/Applications/MacVim.app/Contents/bin
+/Applications/MacVim.app/Contents/bin:\
+/Users/michael.cadiz/Library/Python/2.7/bin
 
 export MANPATH=$MANPATH:\
 $HOME/usr/local/share/man
@@ -93,12 +92,6 @@ if [[ `uname` = "Darwin" ]]; then
 
     export LDFLAGS="${LDFLAGS} -L/usr/local/opt/libxml2/lib"
     export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/libxml2/include"
-fi
-
-if [[ -n `which brew` ]]; then
-    if [[ -f $(brew --prefix)/etc/bash_completion ]]; then
-      . $(brew --prefix)/etc/bash_completion
-    fi
 fi
 
 if [[ -n `which aws_completer` ]]; then
