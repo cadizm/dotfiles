@@ -47,8 +47,14 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/workspace/go
 export LANG='en_US.UTF-8'
 
-# brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
+if [ -n "${USE_JAVA11}" ]; then
+    # brew cask install java11
+    export JAVA_HOME=$(/usr/libexec/java_home -v11)
+else
+    # brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+    export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+fi
 
 export PATH=\
 $HOME/bin:\
