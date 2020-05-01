@@ -46,14 +46,17 @@ export LESS=-XRi
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/workspace/go
 export LANG='en_US.UTF-8'
+export USE_ZULU_JAVA8=1
 
 
 if [ -n "${USE_JAVA11}" ]; then
     # brew cask install java11
     export JAVA_HOME=$(/usr/libexec/java_home -v11)
+elif [ -n "${USE_ZULU_JAVA8}" ]; then
+    export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_252)
 else
     # brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-    export JAVA_HOME=$(/usr/libexec/java_home -v1.8)
+    export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_242)
 fi
 
 export PATH=\

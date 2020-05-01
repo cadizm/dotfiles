@@ -21,6 +21,7 @@ alias l=ls
 alias less='less -X'
 alias ll='ls -l'
 alias ls='ls -F'
+alias rm=trash
 alias sl=ls
 alias srot=sort
 alias ssh-start='eval `ssh-agent`'
