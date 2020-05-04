@@ -1,7 +1,10 @@
 startup_message off
 vbell on
 
-# Make Control+v the global escape combination
+# copy mode scrollback buffer
+defscrollback 1000
+
+# make Control+v the global escape combination
 escape ^Vv
 
 # scroll support
