@@ -63,6 +63,7 @@ export PATH=\
 $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
+$HOME/.krew/bin:\
 $JAVA_HOME/bin:\
 /usr/local/opt/tomcat@8/bin:\
 /usr/local/opt/thrift@0.9/bin:\
@@ -85,6 +86,7 @@ $HOME/usr/local/share/man
 
 . ~/.aliases
 . "${HOME}/bin/setws"
+. ~/bin/bash-functions.sh
 
 set -o emacs
 
