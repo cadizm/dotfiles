@@ -1,0 +1,2 @@
+# https://stackoverflow.com/questions/20363737/mysql-reverse-i-search
+bind "^R" em-inc-search-prev
