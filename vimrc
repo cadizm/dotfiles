@@ -16,6 +16,7 @@ set winaltkeys=no
 set cscopetag
 set cscopetagorder=1
 set autowrite
+set linebreak
 
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
