@@ -61,7 +61,6 @@ export PATH=\
 $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
-$HOME/.krew/bin:\
 $JAVA_HOME/bin:\
 /usr/local/opt/tomcat@8/bin:\
 /usr/local/opt/thrift@0.9/bin:\
@@ -74,6 +73,8 @@ $JAVA_HOME/bin:\
 /usr/bin:\
 /usr/sbin:\
 /usr/texbin:\
+$HOME/.krew/bin:\
+$HOME/.cargo/bin:\
 $GOROOT/bin:\
 $GOPATH/bin:\
 /Applications/MacVim.app/Contents/bin:\
