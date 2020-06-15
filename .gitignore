@@ -1,3 +1,4 @@
+config/configstore
 env.local
 docker/application-template/
 gnupg/crls.d/
