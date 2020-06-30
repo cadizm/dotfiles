@@ -44,7 +44,7 @@ export LESS=-XRi
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/workspace/go
 export LANG='en_US.UTF-8'
-export USE_ZULU_JAVA8=1
+export USE_JAVA11=1
 
 
 if [ -n "${USE_JAVA11}" ]; then
