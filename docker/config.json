@@ -1,14 +1,12 @@
 {
+  "experimental" : "disabled",
+  "credsStore" : "osxkeychain",
+  "detachKeys" : "ctrl-o,o",
   "auths" : {
-    "https://index.docker.io/v1/" : {
 
-    }
   },
+  "stackOrchestrator" : "kubernetes",
   "HttpHeaders" : {
     "User-Agent" : "Docker-Client/19.03.8 (darwin)"
-  },
-  "detachKeys" : "ctrl-o,o",
-  "stackOrchestrator" : "kubernetes",
-  "experimental" : "disabled",
-  "credsStore" : "osxkeychain"
+  }
 }
