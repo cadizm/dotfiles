@@ -17,7 +17,7 @@ alias got=go
 alias grep='egrep -Ea --exclude={cscope.out,tags}'
 alias gvimr='gvim --remote'
 alias h=history
-alias jshell='jshell --feedback verbose --startup DEFAULT --startup PRINTING'
+alias jshell='jshell --feedback verbose --startup DEFAULT --startup PRINTING $*'
 alias l=ls
 alias less='less -X'
 alias ll='ls -l'
