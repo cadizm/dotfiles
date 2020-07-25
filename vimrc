@@ -54,9 +54,6 @@ cmap <C-f> <Right>
 imap <C-f> <Right>
 omap <C-f> <Right>
 
-imap <C-p> <Up>
-imap <C-n> <Down>
-
 cnoremap <M-b> <S-Left>
 inoremap <M-b> <C-Left>
 onoremap <M-b> <C-Left>
