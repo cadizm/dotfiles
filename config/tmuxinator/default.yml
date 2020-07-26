@@ -47,7 +47,7 @@ root: ~/
 windows:
   - "":
   - docs:
-      root: ~/workspace/docs
+      root: ~/Dropbox/docs
   - dropbox:
       root: ~/Dropbox
   - repl: julia
