@@ -107,6 +107,12 @@ if [[ -n `which aws_completer` ]]; then
     complete -C `which aws_completer` aws
 fi
 
+if [[ -n `which terraform` ]]; then
+    # terraform logging to stdout
+    # export TF_LOG=1
+    complete -C /usr/local/bin/terraform terraform
+fi
+
 BASHRC_LOCAL=$HOME/.bashrc.local
 if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
@@ -152,6 +158,3 @@ export GPG_TTY=$(tty)
 
 # https://support.apple.com/en-us/HT208050
 export BASH_SILENCE_DEPRECATION_WARNING=1
-
-# terraform logging to stdout
-export TF_LOG=1
