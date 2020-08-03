@@ -31,7 +31,7 @@ else
     # brew cask install adoptopenjdk/openjdk/adoptopenjdk8
     export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_242)
 fi
-export PATH=${PATH}:$JAVA_HOME/bin:
+export PATH=$JAVA_HOME/bin:${PATH}
 
 # tex
 if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
