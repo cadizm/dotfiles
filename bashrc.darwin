@@ -64,3 +64,8 @@ export PATH=${PATH}:\
 /usr/local/opt/mysql-client/bin:\
 /Applications/MacVim.app/Contents/bin:\
 /Users/michael.cadiz/Library/Python/2.7/bin
+
+if [[ -n "$(which rbenv)" ]]; then
+    eval "$(rbenv init -)"
+    export PATH=${PATH}:$(gem env home)/bin
+fi
