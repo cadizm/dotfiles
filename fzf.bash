@@ -11,3 +11,6 @@ fi
 # Key bindings
 # ------------
 source "/usr/local/opt/fzf/shell/key-bindings.bash"
+
+# https://github.com/junegunn/fzf/issues/1414
+export FZF_DEFAULT_OPTS="--bind ctrl-k:kill-line"
