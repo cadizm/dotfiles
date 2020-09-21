@@ -30,3 +30,4 @@ alias ssh='ssh -AY'
 alias vi=vim
 alias scren=screen
 alias adsf=asdf
+alias cat=bat
