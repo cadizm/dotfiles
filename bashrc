@@ -18,6 +18,9 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 # https://github.com/keybase/keybase-issues/issues/1712
 export GPG_TTY=$(tty)
 
+# for interactive shells
+stty sane && stty erase '^H'
+
 # https://support.apple.com/en-us/HT208050
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -29,7 +32,7 @@ export LESS=-XRi
 export LANG='en_US.UTF-8'
 
 # share command history
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+# export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 export PATH=\
 $HOME/bin:\
