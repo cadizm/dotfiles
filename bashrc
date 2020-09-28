@@ -18,9 +18,6 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 # https://github.com/keybase/keybase-issues/issues/1712
 export GPG_TTY=$(tty)
 
-# for interactive shells
-stty sane && stty erase '^H'
-
 # https://support.apple.com/en-us/HT208050
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
