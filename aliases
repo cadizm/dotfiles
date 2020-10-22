@@ -4,6 +4,7 @@ alias Sort=sort
 alias amke=make
 alias maek=make
 alias mkae=make
+alias cdgo='cd $GOPATH'
 alias cdws='cd $HOME/ws/$(date +%Y%m%d)'
 alias cdwy='cd "$HOME/ws/"`if [ ! -d "$HOME/ws/$(date +%Y%m%d)" ]; then mkws && ls $HOME/ws/$(date +%Y%m%d)/../ | tail -n 2 | head -n 1 ; else ls $HOME/ws/$(date +%Y%m%d)/../ | tail -n 2 | head -n 1; fi`'
 alias clena=clean
