@@ -23,8 +23,7 @@ set nofoldenable
 execute pathogen#infect()
 
 syntax on
-filetype on
-filetype plugin on
+filetype plugin indent on
 
 set wildmenu
 set wildmode=list:longest,full
