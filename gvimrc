@@ -1,9 +1,14 @@
 set lines=60
 set columns=80
 set guioptions-=T
-set guifont=Menlo-Regular:h10
-"set guifont=Bitstream\ Vera\ Sans\ Mono:h12
-"set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
-"set gcr=a:blinkon0
-colorscheme mc
+
 winpos 10 30
+syntax enable
+
+set guifont=Menlo-Regular:h10
+colorscheme mc
+
+" Uncomment 3 lines below for Dracula theme
+" packadd! dracula
+" colorscheme dracula
+" set guifont=Monaco:h10
