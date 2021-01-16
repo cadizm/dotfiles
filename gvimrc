@@ -8,7 +8,6 @@ syntax enable
 set guifont=Menlo-Regular:h10
 colorscheme mc
 
-" Uncomment 3 lines below for Dracula theme
-" packadd! dracula
-" colorscheme dracula
-" set guifont=Monaco:h10
+autocmd FileType java packadd! dracula
+autocmd FileType java colorscheme dracula
+autocmd FileType java set guifont=Monaco:h10
