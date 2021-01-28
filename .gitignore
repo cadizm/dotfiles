@@ -3,6 +3,7 @@ config/tmuxinator/hulu-ads.yml
 docker/scan
 env.local
 docker/application-template/
+docker/scan
 gnupg/crls.d/
 gnupg/gpg-agent.log
 gnupg/private-keys-v1.d/
