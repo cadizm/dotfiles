@@ -50,5 +50,5 @@ windows:
       root: ~/Dropbox/docs
   - dropbox:
       root: ~/Dropbox
-  - repl: julia
+  - repl: jshell
   - ws: mkws && cdws
