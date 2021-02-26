@@ -1,9 +1,11 @@
 config/configstore
+config/iterm2/
+config/jgit/
 config/tmuxinator/hulu-ads.yml
-docker/scan
-env.local
 docker/application-template/
 docker/scan
+docker/scan
+env.local
 gnupg/crls.d/
 gnupg/gpg-agent.log
 gnupg/private-keys-v1.d/
