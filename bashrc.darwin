@@ -9,11 +9,9 @@ export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include
 export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 
-# python3 virtualenvwrapper
-export WORKON_HOME=${HOME}/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-mkdir -p $WORKON_HOME
-. /usr/local/bin/virtualenvwrapper.sh
+# python3 venv
+export VENV_HOME=${HOME}/.venvs
+mkdir -p $VENV_HOME
 
 # golang
 export GOROOT=/usr/local/opt/go/libexec
