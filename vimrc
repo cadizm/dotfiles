@@ -23,7 +23,9 @@ set nofoldenable
 execute pathogen#infect()
 
 syntax on
-filetype plugin indent on
+" https://vim.fandom.com/wiki/Indenting_source_code
+"filetype plugin indent on
+filetype plugin on
 
 set wildmenu
 set wildmode=list:longest,full
