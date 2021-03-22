@@ -23,6 +23,7 @@ set nofoldenable
 execute pathogen#infect()
 
 syntax on
+" https://vim.fandom.com/wiki/Indenting_source_code
 filetype plugin indent on
 
 set wildmenu

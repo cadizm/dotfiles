@@ -67,3 +67,9 @@ if [[ -n "$(which rbenv)" ]]; then
     eval "$(rbenv init -)"
     export PATH=${PATH}:$(gem env home)/bin
 fi
+
+# user-install'ed gems
+if [[ -n "$(which rbenv)" ]]; then
+    VERSION=$(rbenv version-name | sed 's/..$/.0/')
+    export PATH="${HOME}/.gem/ruby/${VERSION}/bin:${PATH}"
+fi
