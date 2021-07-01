@@ -1,9 +1,13 @@
 config/configstore
+config/git
 config/iterm2/
 config/jgit/
 config/tmuxinator/hulu-ads.yml
+docker/.buildNodeID
+docker/.token_seed
+docker/.token_seed.lock
 docker/application-template/
-docker/scan
+docker/devenvironments/
 docker/scan
 env.local
 gnupg/crls.d/
