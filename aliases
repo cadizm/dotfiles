@@ -12,7 +12,7 @@ alias diff='diff -u'
 alias dir=ls
 alias dirs='dirs -l -p -v'
 alias echopath="echo $PATH | sed 's/:/\n/g'"
-alias gitk='gitk --all'
+alias gitk='/bin/rm -f ~/.config/git/gitk && gitk --all'
 alias givm=gvim
 alias got=go
 alias grep='egrep -Ea --exclude={cscope.out,tags}'
