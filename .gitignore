@@ -3,9 +3,7 @@ config/git
 config/iterm2/
 config/jgit/
 config/tmuxinator/hulu-ads.yml
-docker/.buildNodeID
-docker/.token_seed
-docker/.token_seed.lock
+docker/.*
 docker/application-template/
 docker/devenvironments/
 docker/scan
