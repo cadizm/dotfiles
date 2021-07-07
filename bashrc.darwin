@@ -78,3 +78,7 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
+
+# Enhanced cheat autocompletion via integration with fzf
+# https://github.com/cheat/cheat
+export CHEAT_USE_FZF=true

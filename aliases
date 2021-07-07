@@ -32,3 +32,4 @@ alias vi=vim
 alias scren=screen
 alias adsf=asdf
 alias cat=bat
+alias cheat='cheat -a'
