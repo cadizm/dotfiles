@@ -1,5 +1,8 @@
-# Complain if we don't have bash_completion
-. $(brew --prefix)/etc/bash_completion
+# use brew installed version of bash (4.1+)
+export SHELL=/usr/local/bin/bash
+
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
