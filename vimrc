@@ -75,6 +75,9 @@ inoremap <silent> <D-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <M-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
 
+" Map <Shift-Tab> to unindent in insert mode
+inoremap <S-Tab> <C-d>
+
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
     return "\<Del>\<C-o>dw"
