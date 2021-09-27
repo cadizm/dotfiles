@@ -5,6 +5,7 @@ config/jgit/
 config/tmuxinator/hulu-ads.yml
 docker/.*
 docker/application-template/
+docker/contexts/
 docker/devenvironments/
 docker/scan
 env.local
