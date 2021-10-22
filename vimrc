@@ -19,9 +19,6 @@ set autowrite
 set linebreak
 set nofoldenable
 
-" https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-
 syntax on
 " https://vim.fandom.com/wiki/Indenting_source_code
 filetype plugin indent on
@@ -70,13 +67,13 @@ onoremap <C-d> <Del>
 cnoremap <M-BS> <C-w>
 inoremap <M-BS> <C-w>
 
+cnoremap <C-g> <Nop>
+inoremap <C-g> <Esc>
+
 " map <Command-d> to KillWord (same as meta)
 inoremap <silent> <D-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <M-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
-
-cnoremap <C-g> <Nop>
-inoremap <C-g> <Esc>
 
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
@@ -107,6 +104,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 "autocmd FileType qf wincmd J
 botright cwindow
 
+" netrw tree list style
 let g:netrw_liststyle=3
 
 " don't auto-insert comments
@@ -115,11 +113,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " go leader key build/run
 autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
+
 " favor goimports over gofmt
 let g:go_fmt_command = "goimports"
 
 " https://github.com/vim-python/python-syntax
-let g:python_highlight_all = 1
+let g:python_highlight_all=1
 
 " https://github.com/hashivim/vim-terraform/blob/master/README.md#usage
 let g:terraform_fmt_on_save=1
