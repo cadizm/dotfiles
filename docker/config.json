@@ -1,6 +1,6 @@
 {
   "experimental" : "disabled",
-  "credsStore" : "osxkeychain",
+  "credStore" : "osxkeychain",
   "detachKeys" : "ctrl-o,o",
   "auths" : {
 
