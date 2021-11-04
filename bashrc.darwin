@@ -60,10 +60,8 @@ fi
 
 # darwin-specific
 export PATH=${PATH}:\
-/usr/local/opt/tomcat@8/bin:\
 /usr/local/opt/thrift@0.9/bin:\
-/usr/local/opt/mysql-client/bin:\
-/Applications/MacVim.app/Contents/bin:\
+/Users/michael.cadiz/Library/Python/3.9/bin:\
 /Users/michael.cadiz/Library/Python/2.7/bin
 
 if [[ -n "$(which rbenv)" ]]; then

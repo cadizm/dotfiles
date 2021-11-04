@@ -2,7 +2,7 @@ config/configstore
 config/git
 config/iterm2/
 config/jgit/
-config/tmuxinator/hulu-ads.yml
+config/tmuxinator/compass.yml
 docker/.*
 docker/application-template/
 docker/contexts/
