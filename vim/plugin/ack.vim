@@ -6,7 +6,10 @@
 " With MacPorts:
 "   sudo port install p5-app-ack
 
-let g:ackprg="ack\\ -H\\ --nocolor\\ --nogroup"
+"let g:ackprg="ack\\ -H\\ --nocolor\\ --nogroup"
+
+" https://github.com/ggreer/the_silver_searcher
+let g:ackprg = "ag\\ --nogroup\\ --nocolor"
 
 function! Ack(args)
     let grepprg_bak=&grepprg
