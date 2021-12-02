@@ -1,10 +1,12 @@
 \set QUIET 1
 \set PROMPT1 '%M:%> %n@%/%R%#%x '
-\pset null '[NULL]'
 \set COMP_KEYWORD_CASE upper
+\set VERBOSITY verbose
+\pset null '[NULL]'
+\pset linestyle unicode
+\pset border 2
 \timing
 \x auto
-\set VERBOSITY verbose
 \unset QUIET
 
 SET search_path TO public,funds;
