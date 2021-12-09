@@ -2,11 +2,11 @@
 \set PROMPT1 '%M:%> %n@%/%R%#%x '
 \set COMP_KEYWORD_CASE upper
 \set VERBOSITY verbose
+\setenv PAGER 'pspg -I -g --style=16 --bold-labels'
 \pset null '[NULL]'
 \pset linestyle unicode
 \pset border 2
 \timing
-\x auto
 \unset QUIET
 
 SET search_path TO public,funds;
