@@ -61,7 +61,8 @@ fi
 export PATH=${PATH}:\
 /usr/local/opt/thrift@0.9/bin:\
 /Users/michael.cadiz/Library/Python/3.9/bin:\
-/Users/michael.cadiz/Library/Python/2.7/bin
+/Users/michael.cadiz/Library/Python/2.7/bin:\
+/Applications/MacVim.app/Contents/bin
 
 if [[ -n "$(which rbenv)" ]]; then
     eval "$(rbenv init -)"
