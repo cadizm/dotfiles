@@ -60,6 +60,13 @@ cheatpaths:
     tags: [ personal ]
     readonly: false
 
+  # If you have personalized cheatsheets, list them last. They will take
+  # precedence over the more global cheatsheets.
+  - name: compass
+    path: /Users/michael.cadiz/workspace/cheatsheets/compass
+    tags: [ compass ]
+    readonly: false
+
   # While it requires no configuration here, it's also worth noting that
   # 'cheat' will automatically append directories named '.cheat' within the
   # current working directory to the 'cheatpath'. This can be very useful if
