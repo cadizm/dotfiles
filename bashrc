@@ -72,6 +72,8 @@ if [[ -f "${KUBE_PS1}" ]]; then
 
     export KUBE_PS1_NS_ENABLE=false
     export KUBE_PS1_SYMBOL_ENABLE=false
+    export KUBE_PS1_PREFIX=''
+    export KUBE_PS1_SUFFIX='|'
     export PS1='$(kube_ps1)'$PS1
     kubeoff -g
 fi
