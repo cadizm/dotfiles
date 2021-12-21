@@ -63,6 +63,19 @@ set -o emacs
 . ~/bin/setws
 . ~/bin/bash-functions.sh
 
+# Add K8s info to PS1 via https://github.com/jonmosco/kube-ps1
+# Turn on/off using kubeon/kubeoff
+KUBE_PS1=/usr/local/opt/kube-ps1/share/kube-ps1.sh
+if [[ -f "${KUBE_PS1}" ]]; then
+    echo "Sourcing ${KUBE_PS1}"
+    . ${KUBE_PS1}
+
+    export KUBE_PS1_NS_ENABLE=false
+    export KUBE_PS1_SYMBOL_ENABLE=false
+    export PS1='$(kube_ps1)'$PS1
+    kubeoff -g
+fi
+
 BASHRC_DARWIN=$HOME/.bashrc.darwin
 if [[ `uname` = "Darwin" ]]; then
     echo "Sourcing ${BASHRC_DARWIN}"
