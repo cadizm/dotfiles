@@ -1,0 +1,15 @@
+# https://github.com/tmuxinator/tmuxinator/blob/master/spec/fixtures/sample.yml
+
+name: cadizm-dev
+root: ~/workspace/src/dev.cadizm.com
+pre_window: workon dev-api
+windows:
+  - "":
+    root: ~/
+  - gatsby-server: make gatsby-serve
+  - api-server: make dev-api-serve
+  - repl: ipython
+  - ws: mkws && cdws
+  - remote:
+  - make:
+  - root:

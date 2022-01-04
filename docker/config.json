@@ -1,6 +1,9 @@
 {
-	"auths": {},
+	"auths": {
+		"https://index.docker.io/v1/": {}
+	},
 	"detachKeys": "ctrl-o,o",
+	"credsStore": "osxkeychain",
 	"experimental": "disabled",
 	"currentContext": "default"
 }
