@@ -70,7 +70,7 @@ if [[ -f "${KUBE_PS1}" ]]; then
     echo "Sourcing ${KUBE_PS1}"
     . ${KUBE_PS1}
 
-    export KUBE_PS1_NS_ENABLE=false
+    export KUBE_PS1_NS_ENABLE=true
     export KUBE_PS1_SYMBOL_ENABLE=false
     export KUBE_PS1_PREFIX=''
     export KUBE_PS1_SUFFIX='|'
@@ -89,6 +89,10 @@ if [[ -f "${BASHRC_LOCAL}" ]]; then
     echo "Sourcing ${BASHRC_LOCAL}"
     . ${BASHRC_LOCAL}
 fi
+
+# Stop inheriting GEM_HOME from tmuxinator
+# https://discourse.brew.sh/t/why-does-tmuxinator-sets-gem-home/7296
+unset -v GEM_HOME
 
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
