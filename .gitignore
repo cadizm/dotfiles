@@ -4,11 +4,7 @@ config/git
 config/iterm2/
 config/jgit/
 config/tmuxinator/compass.yml
-docker/.*
-docker/application-template/
-docker/contexts/
-docker/devenvironments/
-docker/scan
+docker
 env.local
 gnupg/crls.d/
 gnupg/gpg-agent.log
