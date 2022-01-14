@@ -19,6 +19,8 @@ alias grep='egrep -Ea --exclude={cscope.out,tags}'
 alias gvimr='gvim --remote'
 alias h=history
 alias jshell='jshell --feedback verbose --startup DEFAULT --startup PRINTING --class-path $(jars.sh) $*'
+alias k=kubectl
+alias kx=kubectx
 alias l=ls
 alias less='less -X'
 alias ll='ls -l'
