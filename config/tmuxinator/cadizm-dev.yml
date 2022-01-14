@@ -1,4 +1,4 @@
-# https://github.com/tmuxinator/tmuxinator/blob/master/spec/fixtures/sample.yml
+# https://github.com/tmuxinator/tmuxinator
 
 name: cadizm-dev
 root: ~/workspace/src/dev.cadizm.com

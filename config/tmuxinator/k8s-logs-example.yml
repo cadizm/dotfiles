@@ -1,0 +1,13 @@
+# https://github.com/tmuxinator/tmuxinator
+
+name: k8s-logs
+root: ~/
+pre_window: kubeon
+
+windows:
+  - foo:
+    - kubectx <context to use>
+    - stern <pod regex> --context <context> -n <namespace> -o json | jq
+  - bar:
+    - kubectx <different context to use>
+    - stern <pod regex> --context <context> -n <namespace> --template '{{.Message}}' | jq 'select(.level != "warn")'
