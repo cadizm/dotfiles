@@ -63,6 +63,10 @@ set -o emacs
 . ~/bin/setws
 . ~/bin/bash-functions.sh
 
+# Add tab completions
+complete -F __start_kubectl k
+complete -F _kube_contexts kx
+
 # Add K8s info to PS1 via https://github.com/jonmosco/kube-ps1
 # Turn on/off using kubeon/kubeoff
 KUBE_PS1=/usr/local/opt/kube-ps1/share/kube-ps1.sh
