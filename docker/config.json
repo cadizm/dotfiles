@@ -4,6 +4,7 @@
 	},
 	"detachKeys": "ctrl-o,o",
 	"credsStore": "osxkeychain",
+	"credStore": "osxkeychain",
 	"experimental": "disabled",
 	"currentContext": "default"
 }
