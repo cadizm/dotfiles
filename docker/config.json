@@ -3,8 +3,6 @@
 		"https://index.docker.io/v1/": {}
 	},
 	"detachKeys": "ctrl-o,o",
-	"credsStore": "osxkeychain",
-	"credStore": "osxkeychain",
 	"experimental": "disabled",
-	"currentContext": "default"
+	"currentContext": "colima"
 }
