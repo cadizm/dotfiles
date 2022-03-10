@@ -9,4 +9,4 @@
 \timing
 \unset QUIET
 
-SET search_path TO public,funds;
+SET search_path TO public,funds,contracts,aps;
