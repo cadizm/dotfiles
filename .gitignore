@@ -1,9 +1,11 @@
+config/Microsoft\\VisualStudio Services/
 config/configstore
 config/gatsby
 config/gh/hosts.yml
 config/git
 config/iterm2/
 config/jgit/
+config/pgcli/
 config/tmuxinator/compass*.yml
 docker
 env.local
