@@ -16,7 +16,7 @@
 	smu = submodule update
 	# For systems w/o X
 	df = diff --ignore-space-at-eol
-	dftool = difftool --no-prompt
+	dftool = difftool
 	dfl = diff
 	wc = whatchanged
 	unstage = reset HEAD
@@ -35,8 +35,12 @@
 [color]
 	ui = true
 [diff]
-	tool = opendiff
+	tool = difftastic
 	submodule = log
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
 [merge]
 	tool = opendiff
 	verbosity = 5
@@ -60,6 +64,7 @@
 	lineNumber = true
 [pager]
 	status = false
+	difftool = true
 [status]
 	submodulesummary = 1
 [pull]
