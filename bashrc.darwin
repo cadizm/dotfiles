@@ -57,6 +57,9 @@ if [[ -n `which terraform` ]]; then
     complete -C /usr/local/bin/terraform terraform
 fi
 
+# solana
+export PATH=$PATH:/Users/cadizm/.local/share/solana/install/active_release/bin
+
 # darwin-specific
 export PATH=${PATH}:\
 /usr/local/opt/thrift@0.9/bin:\

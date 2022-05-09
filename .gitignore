@@ -6,6 +6,7 @@ config/git
 config/iterm2/
 config/jgit/
 config/pgcli/
+config/solana/
 config/tmuxinator/compass*.yml
 docker
 env.local
