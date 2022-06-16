@@ -5,6 +5,7 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+# Install with: xcode-select --install
 . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 
 # don't use apple's openssl
