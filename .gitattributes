@@ -1,1 +1,2 @@
 gitconfig filter=filter-email
+psqlrc filter=filter-search-path
