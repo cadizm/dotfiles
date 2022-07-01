@@ -8,6 +8,8 @@
 	autocrlf = input
 	pager = less -x1,5
 	excludesfile = ~/.gitignore
+	fsmonitor = true
+	untrackedcache = true
 [alias]
 	st = status -s
 	ci = commit
