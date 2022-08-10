@@ -62,6 +62,7 @@ set -o emacs
 . ~/.aliases
 . ~/bin/setws
 . ~/bin/bash-functions.sh
+. ~/bin/z.sh  # https://github.com/rupa/z
 
 # Add tab completions
 complete -F __start_kubectl k
