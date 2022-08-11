@@ -28,7 +28,7 @@
 	cl = clean -nx --dry-run
 	pristine = clean -dfx
 	rhhh = reset --hard HEAD
-	ffup = "!(git fetch; git reset --hard @{upstream})"
+	ff-up = "!(git fetch; git reset --hard @{upstream})"
 	short-rev = rev-parse --short
 	last-touched = log -n 1 --pretty=format:'%cn %h %ar'
 	activity = "!(git x-heads --color=always; git x-remotes --color=always) | column -ts'|'"
