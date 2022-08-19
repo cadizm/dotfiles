@@ -13,3 +13,6 @@
 [submodule "vim/pack/plugins/start/rust.vim"]
 	path = vim/pack/plugins/start/rust.vim
 	url = git@github.com:rust-lang/rust.vim.git
+[submodule "vim/pack/themes/start/dracula"]
+	path = vim/pack/themes/start/dracula
+	url = git@github.com:cadizm/dracula-vim.git
