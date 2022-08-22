@@ -130,5 +130,8 @@ let g:python_recommended_style=0
 " https://github.com/hashivim/vim-terraform/blob/master/README.md#usage
 let g:terraform_fmt_on_save=1
 
+" https://github.com/rust-lang/rust.vim#formatting-with-rustfmt
+let g:rustfmt_autosave = 1
+
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
