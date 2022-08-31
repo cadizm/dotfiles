@@ -111,8 +111,8 @@ botright cwindow
 " netrw tree list style
 let g:netrw_liststyle=3
 
-" don't auto-insert comments
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" DO auto-insert comments
+autocmd FileType * setlocal formatoptions+=cro
 
 " go leader key build/run
 autocmd FileType go nmap <leader>b <Plug>(go-build)
