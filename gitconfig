@@ -15,6 +15,8 @@
 	ci = commit
 	br = branch
 	co = checkout
+	cb = cob
+	cob = "!(git checkout $(git branch | sed 's/\\*/ /' | fzf))"
 	smu = submodule update
 	df = diff --ignore-space-at-eol
 	dftool = difftool
