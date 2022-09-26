@@ -28,6 +28,9 @@ set wildmenu
 set wildmode=list:longest,full
 set wildchar=<Tab>
 
+" map leader to comma (,) instead of backslash (\)
+let mapleader = ","
+
 map <C-Tab> :tabn<CR>
 map <C-Tab> :tabp<CR>
 map <C-\> :Lid<CR>
@@ -76,8 +79,11 @@ inoremap <silent> <D-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <M-d> <C-r>=<SID>KillWord()<CR>
 inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
 
-" Map <Shift-Tab> to unindent in insert mode
+" map <Shift-Tab> to unindent in insert mode
 inoremap <S-Tab> <C-d>
+
+" toggle NERDTreee using ",nt<return>"
+:nnoremap <leader>nt<CR> :NERDTreeToggle<CR>
 
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
