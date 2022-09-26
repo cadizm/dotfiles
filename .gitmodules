@@ -16,3 +16,6 @@
 [submodule "vim/pack/themes/start/dracula"]
 	path = vim/pack/themes/start/dracula
 	url = git@github.com:cadizm/dracula-vim.git
+[submodule "vim/pack/plugins/start/nerdtree"]
+	path = vim/pack/plugins/start/nerdtree
+	url = git@github.com:preservim/nerdtree.git
