@@ -83,7 +83,10 @@ inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
 inoremap <S-Tab> <C-d>
 
 " toggle NERDTreee using ",nt<return>"
-:nnoremap <leader>nt<CR> :NERDTreeToggle<CR>
+nnoremap <leader>nt<CR> :NERDTreeToggle<CR>
+" focus NERDTreee using ",n"
+nnoremap <leader>n :NERDTreeFocus<CR>
+
 
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
