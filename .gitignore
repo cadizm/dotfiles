@@ -1,4 +1,7 @@
 config/Microsoft\\VisualStudio Services/
+config/coc/extensions/coc-json-data/
+config/coc/extensions/coc-rust-analyzer-data/
+config/coc/extensions/node_modules/
 config/configstore
 config/gatsby
 config/gh/hosts.yml
