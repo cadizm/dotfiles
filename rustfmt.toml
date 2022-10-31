@@ -1,7 +1,8 @@
-tab_spaces = 4
-use_small_heuristics = "Max"
-# brace_style = "PreferSameLine"
-# control_brace_style = "AlwaysSameLine"
-# fn_single_line = true
-# overflow_delimited_expr = true
-# where_single_line = true
+edition = "2021"
+tab_spaces = 2
+use_small_heuristics = "Default"
+# Use small chain_width until this issue is resolved
+#   https://github.com/rust-lang/rustfmt/issues/4306
+chain_width = 20
+
+# disable_all_formatting = true
