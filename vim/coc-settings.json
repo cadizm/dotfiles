@@ -1,4 +1,5 @@
 {
+  "suggest.noselect": false,
   "suggest.autoTrigger": "always",
   "languageserver": {
     "terraform": {
