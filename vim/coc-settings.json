@@ -13,5 +13,8 @@
       "initializationOptions": {},
       "settings": {}
     }
+  },
+  "[java]": {
+    "suggest.autoTrigger": "none"
   }
 }
