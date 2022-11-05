@@ -40,6 +40,11 @@
         "etag": "\"80e08ca9849bd81:0\"",
         "fileName": "000bfbdd14d2fb8ec5b0d59bec32ef98.schema.json",
         "updateTime": 1667163896198
+      },
+      "https://json.schemastore.org/config.json": {
+        "etag": "\"bcd1f6fd316ad81:0\"",
+        "fileName": "ee050b74d016c5f06e4024d2dce36b54.schema.json",
+        "updateTime": 1667492780644
       }
     }
   },

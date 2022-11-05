@@ -88,10 +88,8 @@ inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
 " map <Shift-Tab> to unindent in insert mode
 inoremap <S-Tab> <C-d>
 
-" toggle NERDTreee using ",nt<return>"
-nnoremap <leader>nt<CR> :NERDTreeToggle<CR>
-" focus NERDTreee using ",n"
-nnoremap <leader>n :NERDTreeFocus<CR>
+" open NERDTreee using ",nt<return>"
+nnoremap <leader>nt<CR> :NERDTreeFocus<CR>
 
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
