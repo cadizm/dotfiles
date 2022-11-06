@@ -16,6 +16,6 @@
     }
   },
   "[java]": {
-    "suggest.autoTrigger": "none"
+    "suggest.autoTrigger": "always"
   }
 }
