@@ -21,6 +21,13 @@ mkdir -p $VENV_HOME
 export GOPATH=$HOME/workspace/go
 export PATH=${PATH}:$GOPATH/bin
 
+# java
+if [[ -d "/usr/local/opt/openjdk@17" ]]; then
+  export JAVA_HOME=/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+  export JDK_HOME=/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
+  export PATH="${JAVA_HOME}/bin:$PATH"
+fi
+
 # tex
 if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
     export PATH=$PATH:/Library/TeX/Root/bin/x86_64-darwin
