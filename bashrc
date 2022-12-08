@@ -35,7 +35,6 @@ export PATH=\
 $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
-$HOME/.krew/bin:\
 $HOME/.cargo/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\

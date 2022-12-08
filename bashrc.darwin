@@ -45,20 +45,6 @@ if [[ -n `which terraform` ]]; then
     complete -C /usr/local/bin/terraform terraform
 fi
 
-# solana
-export PATH=$PATH:/Users/cadizm/.local/share/solana/install/active_release/bin
-
-if [[ -n "$(which rbenv)" ]]; then
-    eval "$(rbenv init -)"
-    export PATH=${PATH}:$(gem env home)/bin
-fi
-
-# user-install'ed gems
-if [[ -n "$(which rbenv)" ]]; then
-    VERSION=$(rbenv version-name | sed 's/..$/.0/')
-    export PATH="${HOME}/.gem/ruby/${VERSION}/bin:${PATH}"
-fi
-
 # command-line fuzzy finder - https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
