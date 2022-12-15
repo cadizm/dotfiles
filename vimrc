@@ -7,6 +7,7 @@ set shiftwidth=2
 set expandtab
 set nowrap
 set ruler
+set ls=2
 set vb
 set ignorecase
 set smartcase
