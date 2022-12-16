@@ -1,7 +1,7 @@
-set wrap linebreak nolist
-set spell
+setlocal wrap linebreak nolist
+setlocal spell
 
-map j gj
-map k gk
-map $ g$
-map 0 g^
+map <buffer> j gj
+map <buffer> k gk
+map <buffer> $ g$
+map <buffer> 0 g^

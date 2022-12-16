@@ -17,5 +17,6 @@
   },
   "[java]": {
     "suggest.autoTrigger": "always"
-  }
+  },
+  "pyright.enable": false
 }
