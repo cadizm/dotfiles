@@ -18,5 +18,5 @@
   "[java]": {
     "suggest.autoTrigger": "always"
   },
-  "pyright.enable": false
+  "pyright.inlayHints.functionReturnTypes": false
 }
