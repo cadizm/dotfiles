@@ -6,7 +6,8 @@
     "coc-html": ">=1.7.0",
     "coc-pyright": ">=1.1.275",
     "coc-rust-analyzer": ">=0.69.4",
-    "coc-java": ">=1.5.6"
+    "coc-java": ">=1.5.6",
+    "coc-thrift-syntax-support": ">=0.0.0-development"
   },
   "lastUpdate": 1671215648674
 }

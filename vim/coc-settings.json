@@ -1,6 +1,7 @@
 {
   "suggest.noselect": false,
   "suggest.autoTrigger": "always",
+
   "languageserver": {
     "terraform": {
       "command": "terraform-ls",
@@ -15,8 +16,11 @@
       "settings": {}
     }
   },
+
   "[java]": {
     "suggest.autoTrigger": "always"
   },
-  "pyright.inlayHints.functionReturnTypes": false
+
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false
 }
