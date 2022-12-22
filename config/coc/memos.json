@@ -45,10 +45,15 @@
         "etag": "\"bcd1f6fd316ad81:0\"",
         "fileName": "ee050b74d016c5f06e4024d2dce36b54.schema.json",
         "updateTime": 1667492780644
+      },
+      "https://json.schemastore.org/rust-project.json": {
+        "etag": "\"8064da70108d91:0\"",
+        "fileName": "216feb9f4917293f684128c2923fc0ad.schema.json",
+        "updateTime": 1671742191728
       }
     }
   },
   "coc-rust-analyzer|global": {
-    "release": "2022-10-31"
+    "release": "2022-12-19"
   }
 }
