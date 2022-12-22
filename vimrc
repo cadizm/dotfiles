@@ -97,9 +97,9 @@ nnoremap <leader>nt<CR> :NERDTreeFocus<CR>
 
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
-    return "\<Del>\<C-o>dw"
+    return "\<Del>\<C-o>\"_dw"
   else
-    return "\<C-o>dw"
+    return "\<C-o>\"_dw"
   endif
 endfunction
 
@@ -109,7 +109,7 @@ function! <SID>KillLine()
     return "\<Del>"
   else
     " Not at EOL; kill until end of line
-    return "\<C-o>d$"
+    return "\<C-o>\"_d$"
   endif
 endfunction
 
