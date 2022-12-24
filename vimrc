@@ -27,7 +27,7 @@ set nobackup
 set nowritebackup
 set updatetime=300
 
-syntax on
+syntax enable
 " https://vim.fandom.com/wiki/Indenting_source_code
 filetype plugin indent on
 
