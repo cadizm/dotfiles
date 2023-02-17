@@ -95,6 +95,9 @@ inoremap <S-Tab> <C-d>
 " open NERDTreee using ",nt<return>"
 nnoremap <leader>nt<CR> :NERDTreeFocus<CR>
 
+" open file in GitHub using ",gh<return>"
+nnoremap <leader>gh<CR> :OpenGithubFile<CR>
+
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
     return "\<Del>\<C-o>\"_dw"

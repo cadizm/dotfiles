@@ -22,3 +22,9 @@
 [submodule "vim/pack/coc/start/coc.nvim"]
 	path = vim/pack/coc/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
+[submodule "vim/pack/plugins/start/open-browser.vim"]
+	path = vim/pack/plugins/start/open-browser.vim
+	url = git@github.com:tyru/open-browser.vim.git
+[submodule "vim/pack/plugins/start/open-browser-github.vim"]
+	path = vim/pack/plugins/start/open-browser-github.vim
+	url = git@github.com:tyru/open-browser-github.vim.git
