@@ -153,6 +153,7 @@ let g:rustfmt_autosave = 1
 set rtp+=/usr/local/opt/fzf
 
 " Begin coc.nvim config ---------------------------------------------------------------------------
+
 " https://github.com/neoclide/coc.nvim
 " https://github.com/neoclide/coc.nvim/blob/master/doc/coc.txt
 
@@ -187,3 +188,18 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 set tagfunc=CocTagFunc
 
 " End coc.nvim config -----------------------------------------------------------------------------
+
+" Begin vim-plug config ---------------------------------------------------------------------------
+
+" https://github.com/junegunn/vim-plug
+" The default plugin directories:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+
+call plug#begin()
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
+call plug#end()
+
+" End vim-plug config -----------------------------------------------------------------------------
