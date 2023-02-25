@@ -1,5 +1,6 @@
 config/.jira/
 config/coc/commands
+config/coc/memos.json
 config/Microsoft\\VisualStudio Services/
 config/coc/extensions/coc-java-data/
 config/coc/extensions/coc-json-data/
