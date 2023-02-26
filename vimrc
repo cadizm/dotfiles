@@ -190,14 +190,18 @@ set tagfunc=CocTagFunc
 " End coc.nvim config -----------------------------------------------------------------------------
 
 " Begin vim-plug config ---------------------------------------------------------------------------
-
+"
 " https://github.com/junegunn/vim-plug
+"
 " The default plugin directories:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
-
+"
+" :PlugInstall
+"
 call plug#begin()
 
+Plug 'mracos/mermaid.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 call plug#end()
