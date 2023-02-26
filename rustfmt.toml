@@ -1,5 +1,5 @@
 edition = "2021"
-tab_spaces = 2
+tab_spaces = 4
 #use_small_heuristics = "Default"
 # Use small chain_width until this issue is resolved: https://github.com/rust-lang/rustfmt/issues/4306
 #chain_width = 20
