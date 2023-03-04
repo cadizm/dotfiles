@@ -92,12 +92,6 @@ inoremap <silent> <C-k> <C-r>=<SID>KillLine()<CR>
 " map <Shift-Tab> to unindent in insert mode
 inoremap <S-Tab> <C-d>
 
-" open NERDTreee using ",nt<return>"
-nnoremap <leader>nt<CR> :NERDTreeFocus<CR>
-
-" open file in GitHub using ",gh<return>"
-nnoremap <leader>gh<CR> :OpenGithubFile<CR>
-
 function! <SID>KillWord()
   if col('.') > strlen(getline('.'))
     return "\<Del>\<C-o>\"_dw"
@@ -152,6 +146,42 @@ let g:rustfmt_autosave = 1
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
 
+" Begin vim-plug config ---------------------------------------------------------------------------
+"
+" https://github.com/junegunn/vim-plug
+"
+" The default plugin directories:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+"
+" :PlugInstall
+"
+call plug#begin()
+
+Plug 'cadizm/dracula-vim'
+Plug 'cespare/vim-toml', {'branch': 'main'}
+Plug 'doums/darcula'
+Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
+Plug 'hashivim/vim-terraform'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }  " Needs node and yarn
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'mracos/mermaid.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
+Plug 'rust-lang/rust.vim'
+Plug 'tyru/open-browser-github.vim'
+Plug 'tyru/open-browser.vim'
+
+call plug#end()
+
+" End vim-plug config -----------------------------------------------------------------------------
+
+" open NERDTreee using ",nt<return>"
+nnoremap <leader>nt<CR> :NERDTreeFocus<CR>
+
+" open file in GitHub using ",gh<return>"
+nnoremap <leader>gh<CR> :OpenGithubFile<CR>
+
 " Begin coc.nvim config ---------------------------------------------------------------------------
 
 " https://github.com/neoclide/coc.nvim
@@ -182,28 +212,11 @@ function! ShowDocumentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor
-autocmd CursorHold * silent call CocActionAsync('highlight')
+if exists(':CocActionAsync')
+  autocmd CursorHold * silent call CocActionAsync('highlight')
+endif
 
 " https://github.com/neoclide/coc.nvim/issues/1026
 set tagfunc=CocTagFunc
 
 " End coc.nvim config -----------------------------------------------------------------------------
-
-" Begin vim-plug config ---------------------------------------------------------------------------
-"
-" https://github.com/junegunn/vim-plug
-"
-" The default plugin directories:
-"   - Vim (Linux/macOS): '~/.vim/plugged'
-"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
-"
-" :PlugInstall
-"
-call plug#begin()
-
-Plug 'mracos/mermaid.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-
-call plug#end()
-
-" End vim-plug config -----------------------------------------------------------------------------
