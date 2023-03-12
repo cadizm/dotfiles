@@ -10,4 +10,4 @@
 -- \set ECHO_HIDDEN on
 \unset QUIET
 
-SET search_path TO public;
+SET search_path TO public,aps,contracts,dealsworkflow,dms,funds,termcatalog;
