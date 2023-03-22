@@ -16,7 +16,8 @@
 	br = branch
 	co = checkout
 	cb = cob
-	cob = "!(git checkout $(git branch | sed 's/\\*/ /' | fzf))"
+	cob = "!(git checkout $(git branch | sed 's/\\*/ /' | sort -r | fzf))"
+  delete-branch = "!(BRANCH=$(git branch | grep -v 'master' | grep -v 'main' | sed 's/\\*/ /' | sort -r | fzf); git br -D $BRANCH && git br -r -D origin/$(echo $BRANCH |  tr -d '\n'))"
 	smu = submodule update
 	df = diff --ignore-space-at-eol
 	dftool = difftool
