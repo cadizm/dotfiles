@@ -10,9 +10,11 @@ fi
 export HISTCONTROL=ignoreboth
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-export HISTSIZE=1000
-export HISTFILESIZE=2000
+export HISTSIZE=100000
+export HISTFILESIZE=200000
 export HISTTIMEFORMAT="%d/%m/%y %T "
+# append to history file instead of overwriting on shell exit
+shopt -s histappend
 
 # Don't want gpg "Inappropriate ioctl for device" error
 # https://github.com/keybase/keybase-issues/issues/1712
