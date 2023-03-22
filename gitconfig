@@ -22,6 +22,7 @@
 	df = diff --ignore-space-at-eol
 	dftool = difftool
 	dfl = diff
+  df-master = diff master...
 	wc = whatchanged
 	unstage = reset HEAD
 	ls-untracked = ls-files --other --exclude-standard
