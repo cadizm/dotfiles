@@ -8,6 +8,7 @@
 \pset border 2
 \timing
 -- \set ECHO_HIDDEN on
+\set ON_ERROR_STOP on
 \unset QUIET
 
-SET search_path TO public,aps,contracts,dealsworkflow,dms,funds,termcatalog;
+SET search_path TO public,aps,contracts,dealsworkflow,dms,funds,termcatalog,acs;

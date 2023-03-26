@@ -143,6 +143,9 @@ let g:terraform_fmt_on_save=1
 " https://github.com/rust-lang/rust.vim#formatting-with-rustfmt
 let g:rustfmt_autosave = 1
 
+" https://github.com/lifepillar/pgsql.vim
+let g:sql_type_default = 'pgsql'
+
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
 
@@ -172,6 +175,7 @@ Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 Plug 'tyru/open-browser-github.vim'
 Plug 'tyru/open-browser.vim'
+Plug 'lifepillar/pgsql.vim'
 
 call plug#end()
 
