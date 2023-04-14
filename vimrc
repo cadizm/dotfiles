@@ -35,9 +35,6 @@ set wildmenu
 set wildmode=list:longest,full
 set wildchar=<Tab>
 
-" map leader to comma (,) instead of backslash (\)
-let mapleader = ","
-
 map <C-Tab> :tabn<CR>
 map <C-Tab> :tabp<CR>
 map <C-\> :Lid<CR>
@@ -181,11 +178,11 @@ call plug#end()
 
 " End vim-plug config -----------------------------------------------------------------------------
 
-" open NERDTreee using ",nt<return>"
-nnoremap <leader>nt<CR> :NERDTreeFocus<CR>
+" open NERDTreee using "<leader>nt"
+nnoremap <leader>nt :NERDTreeFocus<CR>
 
-" open file in GitHub using ",gh<return>"
-nnoremap <leader>gh<CR> :OpenGithubFile<CR>
+" open file in GitHub using "<leader>gh"
+nnoremap <leader>gh :OpenGithubFile<CR>
 
 " Begin coc.nvim config ---------------------------------------------------------------------------
 
