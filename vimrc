@@ -143,6 +143,12 @@ let g:rustfmt_autosave = 1
 " https://github.com/lifepillar/pgsql.vim
 let g:sql_type_default = 'pgsql'
 
+" configure ack to use rg
+let g:ackprg = 'rg --vimgrep --smart-case'
+
+" empty ack search will search for the work the cursor is on
+let g:ack_use_cword_for_empty_search = 1
+
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
 
@@ -158,6 +164,7 @@ set rtp+=/usr/local/opt/fzf
 "
 call plug#begin()
 
+Plug 'mileszs/ack.vim'
 Plug 'cadizm/dracula-vim'
 Plug 'cespare/vim-toml', {'branch': 'main'}
 Plug 'doums/darcula'
