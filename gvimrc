@@ -1,8 +1,8 @@
-set lines=60
-set columns=80
+set lines=76
+set columns=146
 set guioptions-=T
 
-winpos 10 30
+winpos 895 25
 syntax enable
 
 packadd! dracula
