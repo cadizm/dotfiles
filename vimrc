@@ -129,13 +129,13 @@ autocmd FileType go nmap <leader>r <Plug>(go-run)
 let g:go_fmt_command = "goimports"
 
 " https://github.com/vim-python/python-syntax
-let g:python_highlight_all=1
+let g:python_highlight_all = 1
 
 " enable recommended ts/sts/sw of 4
-let g:python_recommended_style=1
+let g:python_recommended_style = 1
 
 " https://github.com/hashivim/vim-terraform/blob/master/README.md#usage
-let g:terraform_fmt_on_save=1
+let g:terraform_fmt_on_save = 1
 
 " https://github.com/rust-lang/rust.vim#formatting-with-rustfmt
 let g:rustfmt_autosave = 1
@@ -151,6 +151,11 @@ let g:ack_use_cword_for_empty_search = 1
 
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
+
+" https://github.com/mtth/scratch.vim
+let g:scratch_height = 80
+let g:scratch_autohide = 0
+let g:scratch_horizontal = 0
 
 " Begin vim-plug config ---------------------------------------------------------------------------
 "
@@ -177,6 +182,7 @@ Plug 'mracos/mermaid.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
+Plug 'mtth/scratch.vim'
 Plug 'tyru/open-browser-github.vim'
 Plug 'tyru/open-browser.vim'
 Plug 'lifepillar/pgsql.vim'
