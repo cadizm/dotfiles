@@ -149,6 +149,8 @@ let g:ackprg = 'rg --vimgrep --smart-case'
 " empty ack search will search for the work the cursor is on
 let g:ack_use_cword_for_empty_search = 1
 
+cnoreabbrev ACk Ack
+
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
 
