@@ -121,9 +121,6 @@ let g:netrw_liststyle=3
 " DO auto-insert comments
 autocmd FileType * setlocal formatoptions+=cro
 
-" go leader key build/run
-autocmd FileType go nmap <leader>b <Plug>(go-build)
-autocmd FileType go nmap <leader>r <Plug>(go-run)
 
 " favor goimports over gofmt
 let g:go_fmt_command = "goimports"
@@ -193,11 +190,6 @@ call plug#end()
 
 " End vim-plug config -----------------------------------------------------------------------------
 
-" open NERDTreee using "<leader>nt"
-nnoremap <leader>nt :NERDTreeFocus<CR>
-
-" open file in GitHub using "<leader>gh"
-nnoremap <leader>gh :OpenGithubFile<CR>
 
 " Begin coc.nvim config ---------------------------------------------------------------------------
 
@@ -237,3 +229,30 @@ endif
 set tagfunc=CocTagFunc
 
 " End coc.nvim config -----------------------------------------------------------------------------
+
+" Leader shortcuts
+"
+" Go build, run, test
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nmap <leader>t <Plug>(go-test)
+
+" Adjust buffer window width by +/- 1
+" This can also be done by:
+"   ctrl-w >
+"   ctrl-w <
+nnoremap <leader>= :vertical resize +1<CR>
+nnoremap <leader>- :vertical resize -1<CR>
+
+" Adjust buffer window width by +/- 5
+" This can also be done by:
+"   5 ctrl-w >
+"   5 ctrl-w <
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>_ :vertical resize -5<CR>
+
+" Open NERDTreee
+nnoremap <leader>nt :NERDTreeFocus<CR>
+
+" Open file in GitHub
+nnoremap <leader>gh :OpenGithubFile<CR>
