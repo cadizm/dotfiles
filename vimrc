@@ -156,6 +156,11 @@ let g:scratch_height = 80
 let g:scratch_autohide = 0
 let g:scratch_horizontal = 0
 
+" https://github.com/srstevenson/vim-picker
+let g:picker_custom_find_executable = 'fd'
+let g:picker_selector_executable = 'fzy'
+
+
 " Begin vim-plug config ---------------------------------------------------------------------------
 "
 " https://github.com/junegunn/vim-plug
@@ -185,6 +190,7 @@ Plug 'mtth/scratch.vim'
 Plug 'tyru/open-browser-github.vim'
 Plug 'tyru/open-browser.vim'
 Plug 'lifepillar/pgsql.vim'
+Plug 'srstevenson/vim-picker'
 
 call plug#end()
 
@@ -236,6 +242,12 @@ set tagfunc=CocTagFunc
 autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 autocmd FileType go nmap <leader>t <Plug>(go-test)
+
+" Find file
+nnoremap <leader>ff <Plug>(PickerEdit)
+
+" Find buffer
+nnoremap <leader>bb <Plug>(PickerBuffer)
 
 " Adjust buffer window width by +/- 1
 " This can also be done by:
