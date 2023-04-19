@@ -121,7 +121,6 @@ let g:netrw_liststyle=3
 " DO auto-insert comments
 autocmd FileType * setlocal formatoptions+=cro
 
-
 " favor goimports over gofmt
 let g:go_fmt_command = "goimports"
 
