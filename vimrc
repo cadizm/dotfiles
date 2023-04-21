@@ -150,11 +150,6 @@ cnoreabbrev ACk Ack
 " enable FZF - https://github.com/junegunn/fzf/blob/master/README-VIM.md
 set rtp+=/usr/local/opt/fzf
 
-" https://github.com/mtth/scratch.vim
-let g:scratch_height = 80
-let g:scratch_autohide = 0
-let g:scratch_horizontal = 0
-
 " https://github.com/srstevenson/vim-picker
 let g:picker_custom_find_executable = 'fd'
 let g:picker_selector_executable = 'fzy'
@@ -185,11 +180,11 @@ Plug 'mracos/mermaid.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
-Plug 'mtth/scratch.vim'
 Plug 'tyru/open-browser-github.vim'
 Plug 'tyru/open-browser.vim'
 Plug 'lifepillar/pgsql.vim'
 Plug 'srstevenson/vim-picker'
+Plug 'vim-scripts/scratch.vim'
 
 call plug#end()
 
