@@ -3,7 +3,7 @@
 \set COMP_KEYWORD_CASE upper
 \set VERBOSITY verbose
 \setenv PAGER 'pspg -I -g --style=16 --bold-labels --reprint-on-exit'
-\pset null 'NULL'
+\pset null '(ω)'
 \pset linestyle unicode
 \pset border 2
 \timing
