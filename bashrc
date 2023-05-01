@@ -68,6 +68,7 @@ set -o emacs
 # Add tab completions
 complete -F __start_kubectl k
 complete -F _kube_contexts kx
+complete -C /Users/cadizm/workspace/go/bin/gocomplete go
 
 # Add K8s info to PS1 via https://github.com/jonmosco/kube-ps1
 # Turn on/off using kubeon/kubeoff
