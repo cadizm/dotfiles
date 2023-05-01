@@ -139,6 +139,9 @@ let g:rustfmt_autosave = 1
 " https://github.com/lifepillar/pgsql.vim
 let g:sql_type_default = 'pgsql'
 
+" disable function highlighting
+let g:cpp_function_highlight = 0
+
 " configure ack to use rg
 let g:ackprg = 'rg --vimgrep --smart-case'
 
