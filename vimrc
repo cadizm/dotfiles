@@ -185,6 +185,7 @@ Plug 'tyru/open-browser.vim'
 Plug 'lifepillar/pgsql.vim'
 Plug 'srstevenson/vim-picker'
 Plug 'vim-scripts/scratch.vim'
+Plug 'bfrg/vim-cpp-modern'
 
 call plug#end()
 

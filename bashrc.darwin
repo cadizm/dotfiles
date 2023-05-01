@@ -60,3 +60,8 @@ export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
 # Enhanced cheat autocompletion via integration with fzf
 # https://github.com/cheat/cheat
 export CHEAT_USE_FZF=true
+
+# llvm
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
