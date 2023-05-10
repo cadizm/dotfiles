@@ -11,4 +11,4 @@
 \set ON_ERROR_STOP on
 \unset QUIET
 
-SET search_path TO public,aps,contracts,dealsworkflow,dms,funds,termcatalog,acs;
+SET search_path TO public,aps,contracts,dealsworkflow,dms,funds,termcatalog,acs,processed_deliverables;
