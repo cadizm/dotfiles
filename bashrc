@@ -24,7 +24,7 @@ export GPG_TTY=$(tty)
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export EDITOR='nvim'
-export PS1='\w$(parse_git_branch)\n\h$ '
+export PS1='→ \w$(parse_git_branch)\n\h$ '
 export IGNOREEOF=2
 export PAGER=less
 export LESS=-XRi
