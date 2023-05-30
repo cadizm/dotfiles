@@ -189,6 +189,8 @@ Plug 'lifepillar/pgsql.vim'
 Plug 'srstevenson/vim-picker'
 Plug 'vim-scripts/scratch.vim'
 Plug 'bfrg/vim-cpp-modern'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
