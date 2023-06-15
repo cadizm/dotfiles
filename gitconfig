@@ -34,6 +34,7 @@
 	rhhh = reset --hard HEAD
 	ff-up = "!(git fetch; git reset --hard @{upstream})"
 	short-rev = rev-parse --short
+	show-date = show --no-notes --no-prefix --no-patch --pretty=format:'%h %cr %ci'
 	last-touched = log -n 1 --pretty=format:'%cn %h %ar'
 	activity = "!(git x-heads --color=always; git x-remotes --color=always) | column -ts'|'"
 	x-heads = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset)|%(color:red)%(objectname:short)%(color:reset)|%(authorname)|%(color:green)%(committerdate:relative)%(color:reset)'
