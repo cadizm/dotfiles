@@ -15,7 +15,6 @@ alias echopath="echo $PATH | sed 's/:/\n/g'"
 alias gitk='/bin/rm -f ~/.config/git/gitk && gitk --all'
 alias givm=gvim
 alias got=go
-alias grep='egrep -Ea --exclude={cscope.out,tags}'
 alias gvimr='gvim --remote'
 alias h=history
 alias jq='jq -C'
