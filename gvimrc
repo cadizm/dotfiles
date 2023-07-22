@@ -8,6 +8,5 @@ set guicursor+=a:blinkon0  " disable blinking cursor
 winpos 1080 26
 syntax enable
 
-" packadd! dracula
-" colorscheme dracula
-colorscheme moonfly
+packadd! dracula
+colorscheme dracula
