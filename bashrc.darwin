@@ -33,6 +33,16 @@ if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
     export PATH=$PATH:/Library/TeX/Root/bin/x86_64-darwin
 fi
 
+# ruby
+if [[ -n "$(which rbenv)" ]]; then
+  eval "$(rbenv init -)"
+  export PATH=${PATH}:$(gem env home)/bin
+
+  # user-install'ed gems
+  VERSION=$(rbenv version-name | sed 's/..$/.0/')
+  export PATH="${HOME}/.gem/ruby/${VERSION}/bin:${PATH}"
+fi
+
 # nvm
 if [ -d "${HOME}/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
