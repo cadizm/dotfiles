@@ -250,6 +250,9 @@ nnoremap <leader>ff <Plug>(PickerEdit)
 " Find buffer
 nnoremap <leader>bb <Plug>(PickerBuffer)
 
+" Show history
+nnoremap <leader>hh :History:<CR>
+
 " Adjust buffer window width by +/- 1
 " This can also be done by:
 "   ctrl-w >
