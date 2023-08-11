@@ -1,5 +1,5 @@
 \set QUIET 1
-\set PROMPT1 '%M:%> %n@%/%R%#%x '
+\set PROMPT1 '%M:%> %n@%/\n%#%x '
 \set COMP_KEYWORD_CASE upper
 \set VERBOSITY verbose
 \setenv PAGER 'pspg -I -g --style=16 --bold-labels --reprint-on-exit'
