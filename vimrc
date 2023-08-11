@@ -15,8 +15,6 @@ set hidden
 set showcmd
 set history=1000
 set winaltkeys=no
-set cscopetag
-set cscopetagorder=1
 set autowrite
 set linebreak
 set nofoldenable
@@ -26,6 +24,11 @@ set signcolumn=yes
 set nobackup
 set nowritebackup
 set updatetime=300
+
+if has('cscope')
+  set cscopetag
+  set cscopetagorder=1
+endif
 
 syntax enable
 " https://vim.fandom.com/wiki/Indenting_source_code
