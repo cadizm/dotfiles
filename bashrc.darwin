@@ -8,9 +8,9 @@ export SHELL=/usr/local/bin/bash
 . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 
 # don't use apple's openssl
-export LDFLAGS=-L/usr/local/opt/openssl/lib
-export CPPFLAGS=-I/usr/local/opt/openssl/include
-export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/openssl/lib"
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig"
 
 # python3 venv
 export VENV_HOME=${HOME}/.venvs
@@ -22,7 +22,7 @@ export GOPATH=$HOME/workspace/go
 export PATH="${PATH}:$GOHOME/bin:$GOPATH/bin"
 
 # java
-export JAVA_HOME=$(/usr/libexec/java_home -v 20)
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 export PATH="${JAVA_HOME}/bin:$PATH"
 
 # tex
@@ -70,8 +70,15 @@ export CHEAT_USE_FZF=true
 
 # llvm
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
 
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Comment out use Java defined above
+#export SDKMAN_DIR="$HOME/.sdkman"
+#[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# proto3 (brew install protobuf@3)
+export PATH="$PATH:/usr/local/opt/protobuf@3/bin"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/protobuf@3/lib"
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/protobuf@3/include"
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/protobuf@3/lib/pkgconfig"
