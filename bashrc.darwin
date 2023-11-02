@@ -22,8 +22,11 @@ export GOPATH=$HOME/workspace/go
 export PATH="${PATH}:$GOHOME/bin:$GOPATH/bin"
 
 # java
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export JAVA_HOME=$(/usr/libexec/java_home -v 20)
 export PATH="${JAVA_HOME}/bin:$PATH"
+
+eval "$(jenv init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
 
 # tex
 if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
@@ -68,7 +71,7 @@ export PATH="/usr/local/opt/gnupg@2.2/bin:$PATH"
 # https://github.com/cheat/cheat
 export CHEAT_USE_FZF=true
 
-# llvm
+# llvm (brew install llvm)
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
