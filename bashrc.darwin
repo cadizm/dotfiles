@@ -25,8 +25,10 @@ export PATH="${PATH}:$GOHOME/bin:$GOPATH/bin"
 export JAVA_HOME=$(/usr/libexec/java_home -v 20)
 export PATH="${JAVA_HOME}/bin:$PATH"
 
-eval "$(jenv init -)"
-export PATH="$HOME/.jenv/bin:$PATH"
+if [[ -n "$(which jenv)" ]]; then
+  eval "$(jenv init -)"
+  export PATH="$HOME/.jenv/bin:$PATH"
+fi
 
 # tex
 if [ -d "/Library/TeX/Root/bin/x86_64-darwin" ]; then
