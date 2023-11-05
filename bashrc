@@ -104,3 +104,11 @@ unset -v GEM_HOME
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1) /'
 }
+
+# https://github.com/gitext-rs/git-stack/blob/main/docs/reference.md#commands
+if [[ -f "/usr/local/etc/bash_completion.d/git-completion.bash" ]]; then
+  . /usr/local/etc/bash_completion.d/git-completion.bash
+_git_stack () {
+  __gitcomp "alias sync next prev reword amend run --rebase --fixup --repair --push"
+}
+fi
