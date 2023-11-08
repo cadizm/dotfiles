@@ -109,6 +109,6 @@ function parse_git_branch {
 if [[ -f "/usr/local/etc/bash_completion.d/git-completion.bash" ]]; then
   . /usr/local/etc/bash_completion.d/git-completion.bash
 _git_stack () {
-  __gitcomp "alias sync next prev reword amend run --rebase --fixup --repair --push"
+  __gitcomp "alias sync next prev reword amend run --rebase --fixup --repair --push up down"
 }
 fi
