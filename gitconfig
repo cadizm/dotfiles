@@ -17,12 +17,12 @@
 	co = checkout
 	cb = cob
 	cob = "!(git checkout $(git branch | sed 's/\\*/ /' | sort -r | fzf))"
-  delete-branch = "!(BRANCH=$(git branch | grep -v 'master' | grep -v 'main' | sed 's/\\*/ /' | sort -r | fzf); git br -D $BRANCH)"
+	delete-branch = "!(BRANCH=$(git branch | grep -v 'master' | grep -v 'main' | sed 's/\\*/ /' | sort -r | fzf); git br -D $BRANCH)"
 	smu = submodule update
 	df = diff --ignore-space-at-eol
 	dftool = difftool
 	dfl = diff
-  df-master = diff master...
+	df-master = diff master...
 	wc = whatchanged
 	unstage = reset HEAD
 	ls-untracked = ls-files --other --exclude-standard
@@ -39,8 +39,8 @@
 	activity = "!(git x-heads --color=always; git x-remotes --color=always) | column -ts'|'"
 	x-heads = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset)|%(color:red)%(objectname:short)%(color:reset)|%(authorname)|%(color:green)%(committerdate:relative)%(color:reset)'
 	x-remotes = for-each-ref --sort=-committerdate refs/remotes/ --format='  %(color:yellow)%(refname:short)%(color:reset)|%(color:red)%(objectname:short)%(color:reset)|%(authorname)|%(color:green)%(committerdate:relative)%(color:reset)'
-  stck = stack
-  absorb = absorb --and-rebase
+	stck = stack
+	absorb = absorb --and-rebase
 [color]
 	ui = true
 [diff]
@@ -49,7 +49,7 @@
 [difftool]
 	prompt = false
 [difftool "difftastic"]
-  cmd = difft "$LOCAL" "$REMOTE"
+	cmd = difft "$LOCAL" "$REMOTE"
 [merge]
 	tool = opendiff
 	verbosity = 5
