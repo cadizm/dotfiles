@@ -1,11 +1,14 @@
 # use brew installed version of bash (4.1+)
 export SHELL=/usr/local/bin/bash
 
+# bash completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-# Install with: xcode-select --install
-. /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+# xcode command line tools
+if [[ ! -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]]; then
+  echo "Command Line Developer Tools missing, please install via \`xcode-select --install\`"
+fi
+#
 
 # don't use apple's openssl
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/openssl/lib"

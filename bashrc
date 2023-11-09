@@ -106,6 +106,7 @@ function parse_git_branch {
 }
 
 # https://github.com/gitext-rs/git-stack/blob/main/docs/reference.md#commands
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 if [[ -f "/usr/local/etc/bash_completion.d/git-completion.bash" ]]; then
   . /usr/local/etc/bash_completion.d/git-completion.bash
 _git_stack () {
