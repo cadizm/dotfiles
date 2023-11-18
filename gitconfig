@@ -41,6 +41,9 @@
 	x-remotes = for-each-ref --sort=-committerdate refs/remotes/ --format='  %(color:yellow)%(refname:short)%(color:reset)|%(color:red)%(objectname:short)%(color:reset)|%(authorname)|%(color:green)%(committerdate:relative)%(color:reset)'
 	stck = stack
 	absorb = absorb --and-rebase
+	reword = stack reword
+	amend = stack amend
+	sync = stack sync
 [color]
 	ui = true
 [diff]
