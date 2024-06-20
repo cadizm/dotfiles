@@ -275,3 +275,7 @@ nnoremap <leader>nt :NERDTreeFocus<CR>
 
 " Open file in GitHub
 nnoremap <leader>gh :OpenGithubFile<CR>
+
+" Create scratch buffer
+nnoremap <leader>sc :set buftype=nofile<CR>
+nnoremap <leader>scratch :set buftype=nofile<CR>
