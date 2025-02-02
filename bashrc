@@ -40,13 +40,16 @@ $HOME/usr/local/sbin:\
 $HOME/.cargo/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
+/opt/homebrew/bin:\
+/opt/homebrew/sbin:\
 /bin:\
 /sbin:\
 /usr/bin:\
 /usr/sbin
 
 export MANPATH=$MANPATH:\
-$HOME/usr/local/share/man
+$HOME/usr/local/share/man:\
+/opt/homebrew/share/man
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -73,7 +76,7 @@ complete -C /Users/cadizm/workspace/go/bin/gocomplete go
 
 # Add K8s info to PS1 via https://github.com/jonmosco/kube-ps1
 # Turn on/off using kubeon/kubeoff
-KUBE_PS1=/usr/local/opt/kube-ps1/share/kube-ps1.sh
+KUBE_PS1=/opt/homebrew/share/kube-ps1.sh
 if [[ -f "${KUBE_PS1}" ]]; then
     echo "Sourcing ${KUBE_PS1}"
     . ${KUBE_PS1}
@@ -114,8 +117,8 @@ function parse_git_branch {
 
 # https://github.com/gitext-rs/git-stack/blob/main/docs/reference.md#commands
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-if [[ -f "/usr/local/etc/bash_completion.d/git-completion.bash" ]]; then
-  . /usr/local/etc/bash_completion.d/git-completion.bash
+if [[ -f "/opt/homebrew/etc/bash_completion.d/git-completion.bash" ]]; then
+  . /opt/homebrew/etc/bash_completion.d/git-completion.bash
 _git_stack () {
   __gitcomp "--rebase --repair amend down next prev push reword run sync up"
 }

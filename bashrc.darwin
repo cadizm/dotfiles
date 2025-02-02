@@ -1,8 +1,8 @@
 # use brew installed version of bash (4.1+)
-export SHELL=/usr/local/bin/bash
+export SHELL=$(which bash)
 
 # bash completion `brew install bash-completion@2`
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 # xcode command line tools
 if [[ ! -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ]]; then
@@ -10,16 +10,16 @@ if [[ ! -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion
 fi
 
 # don't use apple's openssl
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/openssl/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="PKG_CONFIG_PATH:/usr/local/opt/openssl/lib/pkgconfig"
+export LDFLAGS="$LDFLAGS -L/opt/homebrew/opt/openssl/lib"
+export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/openssl/include"
+export PKG_CONFIG_PATH="PKG_CONFIG_PATH:/opt/homebrew/opt/openssl/lib/pkgconfig"
 
 # python3 venv
 export VENV_HOME=${HOME}/.venvs
 mkdir -p $VENV_HOME
 
 # golang
-export GOHOME="/usr/local/Cellar/go@1.18/1.18.10"
+export GOHOME="/opt/homebrew/Cellar/go@1.18/1.18.10"
 export GOPATH=$HOME/workspace/go
 export PATH="${PATH}:$GOHOME/bin:$GOPATH/bin"
 
@@ -50,8 +50,8 @@ fi
 # nvm
 if [ -d "${HOME}/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
-    [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-    [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 fi
 
 # aws-cli
@@ -63,32 +63,32 @@ fi
 if [[ -n `which terraform` ]]; then
     # terraform logging to stdout
     # export TF_LOG=1
-    complete -C /usr/local/bin/terraform terraform
+    complete -C /opt/homebrew/bin/terraform terraform
 fi
 
 # command-line fuzzy finder - https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export PATH="$PATH:/usr/local/opt/gnupg@2.2/bin"
+export PATH="$PATH:/opt/homebrew/opt/gnupg@2.2/bin"
 
 # Enhanced cheat autocompletion via integration with fzf
 # https://github.com/cheat/cheat
 export CHEAT_USE_FZF=true
 
 # llvm (brew install llvm)
-export PATH="$PATH:/usr/local/opt/llvm/bin"
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
+export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
+export LDFLAGS="$LDFLAGS -L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/llvm/include"
 
 # Comment out use Java defined above
 #export SDKMAN_DIR="$HOME/.sdkman"
 #[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # proto3 (brew install protobuf@3)
-export PATH="$PATH:/usr/local/opt/protobuf@3/bin"
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/protobuf@3/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/protobuf@3/include"
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/protobuf@3/lib/pkgconfig"
+export PATH="$PATH:/opt/homebrew/opt/protobuf@3/bin"
+export LDFLAGS="$LDFLAGS -L/opt/homebrew/opt/protobuf@3/lib"
+export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/protobuf@3/include"
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/homebrew/opt/protobuf@3/lib/pkgconfig"
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
