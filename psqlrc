@@ -2,6 +2,7 @@
 \set PROMPT1 '%M:%> %n@%/\n%#%x '
 \set COMP_KEYWORD_CASE upper
 \set VERBOSITY verbose
+\set HISTSIZE 10000
 \setenv PAGER 'pspg -I -g --style=16 --bold-labels --reprint-on-exit'
 \pset null '(ω)'
 \pset linestyle unicode

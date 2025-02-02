@@ -70,6 +70,7 @@ complete -F __start_kubectl k
 complete -F _kube_contexts kx
 complete -C /Users/cadizm/workspace/go/bin/gocomplete go
 
+
 # Add K8s info to PS1 via https://github.com/jonmosco/kube-ps1
 # Turn on/off using kubeon/kubeoff
 KUBE_PS1=/usr/local/opt/kube-ps1/share/kube-ps1.sh
@@ -77,10 +78,16 @@ if [[ -f "${KUBE_PS1}" ]]; then
     echo "Sourcing ${KUBE_PS1}"
     . ${KUBE_PS1}
 
+function get_empty_namespace() {
+    echo ""
+}
+
     export KUBE_PS1_NS_ENABLE=true
     export KUBE_PS1_SYMBOL_ENABLE=false
     export KUBE_PS1_PREFIX=''
-    export KUBE_PS1_SUFFIX='|'
+    export KUBE_PS1_SUFFIX=''
+    export KUBE_PS1_CTX_COLOR=cyan
+    export KUBE_PS1_NAMESPACE_FUNCTION=get_empty_namespace
     export PS1='$(kube_ps1)'$PS1
     kubeoff -g
 fi
