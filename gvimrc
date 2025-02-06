@@ -1,11 +1,11 @@
-set lines=85
+set lines=90
 set columns=150
 
 set guioptions-=T
-set guifont=Monaco:h12
+set guifont=Monaco:h13
 set guicursor+=a:blinkon0  " disable blinking cursor
 
-winpos 1080 26
+winpos 1320 25
 syntax enable
 
 packadd! dracula
