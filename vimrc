@@ -195,6 +195,7 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end()
 
