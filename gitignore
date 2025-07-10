@@ -17,6 +17,7 @@
 .byebug_history
 .eggs
 .env.test.local
+.ijwb_aspects/
 .ipynb_checkpoints/
 .lesshst
 .psql_history

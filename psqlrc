@@ -1,5 +1,6 @@
 \set QUIET 1
-\set PROMPT1 '%M:%> %n@%/\n%#%x '
+-- \set PROMPT1 '%M:%> %n@%/\n%#%x '
+\set PROMPT1 '%:env::%n@%/\n%#%x '
 \set COMP_KEYWORD_CASE upper
 \set VERBOSITY verbose
 \set HISTSIZE 10000
