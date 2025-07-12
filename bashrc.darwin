@@ -29,13 +29,13 @@ export GOHOME=/usr/local/go
 export GOPATH=~/workspace/go
 export PATH="${PATH}:$GOHOME/bin"
 
-# java
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-export PATH="${JAVA_HOME}/bin:$PATH"
 
 if [[ -n "$(which jenv)" ]]; then
   eval "$(jenv init -)"
   export PATH="$HOME/.jenv/bin:$PATH"
+  # java
+  export JAVA_HOME=$(jenv javahome)
+  export PATH="${JAVA_HOME}/bin:$PATH"
 fi
 
 # tex
