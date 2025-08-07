@@ -93,3 +93,9 @@
 	autoStash = true
 [show]
 	date = local
+[spice "branchCreate"]
+	prefix = cadizm/
+[spice "log"]
+	all = true
+[spice "submit"]
+	draft = true

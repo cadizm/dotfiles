@@ -112,6 +112,10 @@ if [[ -f "${BASHRC_LOCAL}" ]]; then
     . ${BASHRC_LOCAL}
 fi
 
+if [[ -f "$HOME/.cargo/env"  ]]; then
+  . "$HOME/.cargo/env"
+fi
+
 # Stop inheriting GEM_HOME from tmuxinator
 # https://discourse.brew.sh/t/why-does-tmuxinator-sets-gem-home/7296
 unset -v GEM_HOME
