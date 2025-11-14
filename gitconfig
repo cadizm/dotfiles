@@ -99,3 +99,5 @@
 	all = true
 [spice "submit"]
 	draft = true
+[http]
+	sslCAInfo = /Users/michael.cadiz/.mdm/certificates/combined-ca-bundle.pem
