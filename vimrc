@@ -280,3 +280,6 @@ nnoremap <leader>gh :OpenGithubFile<CR>
 " Create scratch buffer
 nnoremap <leader>sc :set buftype=nofile<CR>
 nnoremap <leader>scratch :set buftype=nofile<CR>
+
+" Add command to enter visual block mode when in tmux (i.e. `:VB` <enter>)
+command! VB normal! <C-v>
