@@ -44,7 +44,7 @@ $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
 $HOME/.cargo/bin:\
-$HOME/.opencode/bin:\
+$HOME/workspace/go/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 $HOMEBREW_PATH/bin:\
