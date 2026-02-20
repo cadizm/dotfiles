@@ -40,6 +40,8 @@ export LANG='en_US.UTF-8'
 # export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 export PATH=\
+$HOME/.local/bin:\
+$HOME/.opencode/bin:\
 $HOME/bin:\
 $HOME/usr/local/bin:\
 $HOME/usr/local/sbin:\
