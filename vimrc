@@ -175,6 +175,7 @@ call plug#begin()
 
 Plug 'mileszs/ack.vim'
 Plug 'cadizm/dracula-vim'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'cespare/vim-toml', {'branch': 'main'}
 Plug 'doums/darcula'
 Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
