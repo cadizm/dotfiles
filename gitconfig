@@ -99,5 +99,6 @@
 	all = true
 [spice "submit"]
 	draft = true
+	listTemplatesTimeout = 30s
 [http]
 	sslCAInfo = /Users/michael.cadiz/.mdm/certificates/combined-ca-bundle.pem
