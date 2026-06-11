@@ -184,7 +184,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }  " Needs
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mracos/mermaid.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 Plug 'tyru/open-browser-github.vim'
@@ -204,6 +204,7 @@ call plug#end()
 
 
 " Begin coc.nvim config ---------------------------------------------------------------------------
+if exists('g:did_coc_loaded')
 
 " https://github.com/neoclide/coc.nvim
 " https://github.com/neoclide/coc.nvim/blob/master/doc/coc.txt
@@ -240,6 +241,7 @@ endif
 " https://github.com/neoclide/coc.nvim/issues/1026
 set tagfunc=CocTagFunc
 
+endif
 " End coc.nvim config -----------------------------------------------------------------------------
 
 " Leader shortcuts
