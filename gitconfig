@@ -96,3 +96,7 @@
 [spice "submit"]
 	draft = true
 	listTemplatesTimeout = 30s
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[http]
+	sslCAInfo = /Users/michael.cadiz/.mdm/certificates/combined-ca-bundle.pem
