@@ -23,6 +23,7 @@
 .psql_history
 .vagrant
 ID
+bazel-cadizm-*
 tags
 token.mat
 **/.claude/
