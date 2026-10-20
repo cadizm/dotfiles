@@ -11,6 +11,8 @@
 *.swo
 *.swp
 *~
+.agents
+.ai/
 .DS_Store
 .bash_history
 .bazelrc.user
